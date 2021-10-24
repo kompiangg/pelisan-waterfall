@@ -1,11 +1,13 @@
-/* * {
+/* {
     font-family: "Times New Roman";
 } */
+
 /* 
 body {
     background-color: sandybrown;
     height: 1920px; 
 } */
+
 
 .navbar {
     width: 100%;
@@ -13,6 +15,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     position: fixed;
+    z-index: 10;
     top: 0;
 }
 
@@ -21,7 +24,7 @@ body {
 }
 
 .carousel-text{
-    top: 17%;
+    top: 20%;
     left: 10%;
 }
 
@@ -67,7 +70,6 @@ body {
     background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(239, 130, 1, 0.63) 0%, rgba(239, 130, 1, 0.1) 100%);
     border: 1px solid rgba(239, 130, 1, 0.2);
     backdrop-filter: blur(5px);
-    /* Note: backdrop-filter has minimal browser support */
     border-radius: 20px;
 }
 
@@ -78,7 +80,6 @@ body {
     font-size: 20px;
     margin-top: 7%;
     line-height: 126%;
-    /* or 25px */
     color: #FFFFFF;
     
 }

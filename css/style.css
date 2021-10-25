@@ -1,18 +1,21 @@
-*{
-    font-family: 'Times New Roman';
-}
+/* {
+    font-family: "Times New Roman";
+} */
 
-body{
+/* 
+body {
     background-color: sandybrown;
-    height: 1920px;
-}
+    height: 1920px; 
+} */
 
-.navbar{
+
+.navbar {
     width: 100%;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    position:fixed;
+    position: fixed;
+    z-index: 10;
     top: 0;
 }
 
@@ -51,6 +54,66 @@ a{
     font-weight: 500;
 }
 
-.landing{
-    padding-top: 80px;
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel-text{
+    top: 20%;
+    left: 10%;
+}
+
+.carousel-text-content h1 {
+    font-family: 'Tinos', serif;
+    color: white;
+    font-size: 4.5em;
+    font-weight: 400;
+}
+
+.carousel-text-content h1 strong {
+    font-weight: 700;
+}
+
+.carousel-text .orange-line {
+    position: relative;
+    top: 52px;
+    width: 151px;
+    height: 5px;
+    background: #EF8201;
+}
+
+.carousel-text .carousel-text-about {
+    position: relative;
+    top: 109px;
+    width: 792px;
+    height: 136px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170.5%;
+    /* or 34px */
+    color: #FFFFFF;
+}
+
+.carousel-text .carousel-button button {
+    position: relative;
+    width: 191.83px;
+    height: 54.81px;
+    top: 160px;
+    left: -3px;
+    background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(239, 130, 1, 0.63) 0%, rgba(239, 130, 1, 0.1) 100%);
+    border: 1px solid rgba(239, 130, 1, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+.carousel-text .carousel-button button p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 7%;
+    line-height: 126%;
+    color: #FFFFFF;
 }

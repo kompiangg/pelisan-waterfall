@@ -19,6 +19,41 @@ body {
     top: 0;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.nav{
+    display: inline;
+    padding-right: 10px;
+    text-align: center;
+}
+
+li.logo{
+    font-size: 30px;
+}
+
+.batas{
+    color: #EF8201;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.menu{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
 .carousel-inner {
     height: 100vh;
 }
@@ -81,5 +116,4 @@ body {
     margin-top: 7%;
     line-height: 126%;
     color: #FFFFFF;
-    
 }

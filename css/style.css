@@ -60,7 +60,7 @@ a{
 }
 
 .carousel-text {
-    top: 20%;
+    top: 18%;
     left: 10%;
 }
 
@@ -178,6 +178,12 @@ section {
     font-size: 20px;
 }
 
+.about-us img {
+    max-height: 487.5px;
+    border-radius: 30px;
+    filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.4));
+}
+
 .gallery h3 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -273,6 +279,6 @@ footer .row {
     padding-top: 50px;
 }
 
-footer .container {
-    text-align: left;
+footer .container-footer {
+    text-align: left!important;
 }

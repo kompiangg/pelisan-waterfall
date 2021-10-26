@@ -55,10 +55,11 @@ a{
 }
 
 .carousel-inner {
+    max-width: 1920px;
     height: 100vh;
 }
 
-.carousel-text{
+.carousel-text {
     top: 20%;
     left: 10%;
 }
@@ -85,7 +86,7 @@ a{
 .carousel-text .carousel-text-about {
     position: relative;
     top: 109px;
-    width: 792px;
+    max-width: 792px;
     height: 136px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -116,4 +117,35 @@ a{
     margin-top: 7%;
     line-height: 126%;
     color: #FFFFFF;
+}
+
+section {
+    max-width: 1920px;
+    min-height: 800px;
+}
+
+.series h2,
+.aboutus h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.series h2 span,
+.aboutus h2 span {
+    font-weight: bold;
+}
+
+.series .container,
+.aboutus .container {
+    padding-top: 80px;
+}
+
+.aboutus {
+    background-color: black;
+}
+
+.aboutus h2 {
+    color: white;
 }

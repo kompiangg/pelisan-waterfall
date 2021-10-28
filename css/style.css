@@ -1,12 +1,3 @@
-/* {
-    font-family: "Times New Roman";
-} */
-
-/* 
-body {
-    background-color: sandybrown;
-    height: 1920px; 
-} */
 body {
     max-width: 100%;
     overflow-x: hidden;
@@ -76,7 +67,7 @@ a{
     font-family: 'Tinos', serif;
     color: white;
     /* font-size: 4.5em; */
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 400;
 }
 
@@ -88,50 +79,49 @@ a{
     position: relative;
     top: 52px;
     width: 11vw;
-    height: 0.35vw;
+    height: 0.3vw;
     background: #EF8201;
 }
 
 .carousel-text .carousel-text-about {
     position: relative;
-    top: 109px;
-    max-width: 50vw;
+    top: 4vw;
+    font-size: 1vw;
+    max-width: 38vw;
     height: 10vw;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 170.5%;
+    line-height: 180.5%;
     /* or 34px */
     color: #FFFFFF;
 }
 
 .carousel-text .carousel-button button {
     position: relative;
-    width: 14vw;
-    height: 3.9vw;
+    width: 10.8vw;
+    height: 3vw;
     top: 160px;
     left: -3px;
-    background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(239, 130, 1, 0.63) 0%, rgba(239, 130, 1, 0.1) 100%);
+    background: radial-gradient(424.21% 424.21% at 31.54% -151.44%, rgba(239, 130, 1, 0.7) 0%, rgba(239, 130, 1, 0.1) 100%);
     border: 1px solid rgba(239, 130, 1, 0.2);
+    filter: drop-shadow(4px 3px 3px rgba(239, 130, 1, 0.25));
     backdrop-filter: blur(5px);
-    border-radius: 20px;
+    border-radius: 1vw;
     /* Font */
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 1.2vw;
     color: #FFFFFF;
+    
 }
 /* ubahan font diatas-klo mau dirubah, hapus aja dibawah */
 /* --- */
 .carousel-text {
     top: 10vw!important;
 }
-.carousel-text .carousel-text-about {
-    top: 4vw;
-    font-size: 1.1vw;
-}
+
 .carousel-text .carousel-button button{
     top: 3vw;
 }
@@ -143,51 +133,60 @@ a{
 }
 /* ---- */
 
-
-
-
 /* Fee */
+
 .fee{
     background: url('../assets/hero_images/fee_hd.png') no-repeat;
     background-size:cover;
-    width: 100vw;
-    height: 18vw;
+    /* width: 100vw; */
+    /* height: 350px!important; */
     text-align: center;
+    /* font-family: 'Poppins'; */
     /* display: flex;
     align-items: center;
     justify-content: center; */
     /* padding-top: 66.64%; */
 }
 
-.fee h1{
-    font-weight: 800;
-    font-size: 3vw;
-    line-height: 30%;
-    color: white;
+.fee .container-fee .row-fee {
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+
+.fee h2,
+.fee p {
+    padding-top: 1vw;
+    font-size: 2.5vw;
     padding: 10px;
-    font-family: 'Montserrat';
-    letter-spacing: 2px;
-    padding-top: 1.5vw;
-}
-
-.fee h2{
-    font-weight: 400;
+    font-weight: 800;
     color: white;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
 }
 
-section {
-    max-width: 1920px;
-    min-height: 700px;
+.fee p {
+    font-size: 2.8vw;
+    letter-spacing: 8px;
 }
 
-.aboutus-gallery {
-    background-image: url(/assets/background/background_aboutus_gallery.jpg);
-    height: 1845px;
+.fee span {
+    display: block;
+    font-size: 1.7vw;
+    font-weight: 600
 }
 
+/* About us */
 
-/* ABoutus */
+.about-us{
+    background-image: url(/assets/background/background_aboutus_gallery_pisah_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 1845px; */
+}
+
+.about-us .container {
+    padding-bottom: 3vw;
+}
 
 .series h2,
 .about-us h2 {
@@ -204,7 +203,7 @@ section {
 }
 
 .row {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .about-us {
@@ -248,6 +247,12 @@ section {
     filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.4));
 }
 
+/* Gallery */
+
+.gallery {
+    background-color: black;
+}
+
 .gallery h3 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -265,8 +270,14 @@ section {
     color: #054000;
 }
 
+/* Location */
 .location {
     background-color: #F2F2F2;
+}
+
+.location iframe {
+    width: 30vw;
+    height: 20vw;
 }
 
 .location h3{
@@ -291,6 +302,12 @@ section {
     font-size: 25px;
 }
 
+.location .container {
+    padding-bottom: 50px;
+}
+
+/* Review */
+
 .review h3{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -307,6 +324,17 @@ section {
     font-size: 30px;
     color: #054000;
     text-align: left;
+}
+
+.reviewer-impression {
+    line-height: 2em;
+}
+
+.reviewer-impression::before {
+    content: open-quote;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .review .reviewer-name {
@@ -332,17 +360,27 @@ section {
     text-underline-offset: 10px;
 }
 
-footer {
+/* Footer */
+
+.footer {
     margin-top: 10px;
-    height: 270px;
+    /* height: 270px; */
     background-color: black;
     color: white;
 }
 
-footer .row {
-    padding-top: 50px;
+.footer .row {
+    padding-top: 30px;
 }
 
-footer .container-footer {
-    text-align: left!important;
+.footer .container .copyright {
+    padding-top: 20px!important;
+}
+
+.footer .container {
+    text-align: left;
+}
+
+.footer p {
+    margin-bottom: 5px;
 }

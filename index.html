@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
 
     <title>Pelisan Waterfall</title>
   </head>
@@ -44,7 +45,7 @@
             <img src="assets/hero_images/1.jpg" alt="Pelisan Waterfall" class="d-block w-100">
           </div> -->
         </div>
-        
+
         <div class="carousel-text" style="position: absolute;">
           <div class="carousel-text-content">
             <h1>DISCOVER <br> THE BEAUTY OF  <br> <strong>PELISAN WATERFALL</strong> </h1>
@@ -53,12 +54,11 @@
           <div class="orange-line"></div>
 
           <div class="carousel-text-about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
-              pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum,  nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum,  nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan.</p>
           </div>
 
           <div class="carousel-button">
-            <a href="#360">
+            <a href="#view-360">
               <button>Virtual Tour</button>
             </a>
           </div>
@@ -67,24 +67,26 @@
     </section>
     <!-- End Hero Image Section -->
 
-    <div class="fee">
-      <div>
+    <!-- Start Fee Section -->
+    <section class="fee" id="fee">
+      <div class="container container-fee">
         <!-- <img src="assets/hero_images/fee_hd.png" alt=""> -->
-        <br><br>
-        
-        <h1 style="">ENTRY FEE</h1>
-        <div class="entry" style="display: flex;justify-content: space-around;align-items: center;">
-          <div class="type1" style="float: left;">
-            <h1>Rp.5000</h1>
-            <h2>Domestic</h2>
+        <div class="row">
+          <div class="col-12">
+            <h2>ENTRY FEE</h2>
           </div>
-          <div class="type2" style="float: right;">
-            <h1>Rp.15000</h1>
-            <h2>Non-Domestic</h2>
+        </div>
+        <div class="row row-fee">
+          <div class="col-md-6">
+            <p>Rp5000 <br> <span style="letter-spacing: 2px;">Domestic</span></p>
+          </div>
+          <div class="col-md-6">
+            <p>Rp15000 <br> <span style="letter-spacing: 2px">Non-Domestic</span></p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- End Fee Section -->
 
     <!-- Start Section Series -->
     <section id="series" class="series">
@@ -100,50 +102,49 @@
     </section>
     <!-- End Section Series -->
 
-    <!-- Start Section Abouts Us and Gallery -->
-    <section class="aboutus-gallery">
-
-      <!-- Start Div About us -->
-      <div class="about-us" id="about-us" style="height: 50%;">
-        <div class="container">
-          <div class="header">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h2>About <span>Us</span></h2>
-              </div>
-            </div>
-          </div>
-          <div class="row gx-lg-5">
-            <div class="col-xl-4">
-              <img src="/assets/1.jpg" alt="Gate of Pelisan Waterfall">
-            </div>
-  
-            <div class="col-xl-8">
-              <h3>Pelisan Waterfall</h3>
-              <p style="padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum, nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum, nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum, nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan.</p>
-              <a href="about_us.html">
-                <button> Read More </button>
-              </a> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Div About Us -->
-
-      <!-- Start Div Gallery -->
-      <div class="gallery" id="gallery" style="height: 50%;">
-        <div class="container">
+    <!-- Start Div About us -->
+    <section class="about-us" id="about-us">
+      <div class="container">
+        <div class="header">
           <div class="row">
             <div class="col-12 text-center">
-              <h3>Gallery</h3>
+              <h2>About <span>Us</span></h2>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End Div Gallery -->
+        <div class="row gx-lg-5">
+          <div class="col-xl-4">
+            <img src="/assets/1.jpg" alt="Gate of Pelisan Waterfall">
+          </div>
 
+          <div class="col-xl-8">
+            <h3>Pelisan Waterfall</h3>
+            <p style="padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum, nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum, nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum, nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan.</p>
+            <a href="about_us.html">
+              <button> Read More </button>
+            </a> 
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- End Section About Us and Gallery -->
+    <!-- End Div About Us -->
+
+    <!-- Start Div Gallery -->
+    <section  class="gallery" id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3>Gallery</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Div Gallery -->
 
     <!-- Start Section 360 View -->
     <section id="view-360" class="view-360">
@@ -160,7 +161,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <p>Feels virutal tour experience by clik the mark on map</p>
+            <p>Feels virtual tour experience by clik the mark on map</p>
           </div>
         </div>
       </div>
@@ -177,7 +178,10 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <img src="" alt="Peta Pelisan Waterfall">
+            <iframe
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/search?key=api_key_pelisan_email&q=Pelisan+Waterfall+Entrance" allowfullscreen id="maps-embed">
+            </iframe>
           </div>
           <div class="col-md-6">
             <div class="row gx-md-1">
@@ -206,10 +210,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7">
             <img src="" alt="reviewer carousel">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <p class="reviewer-impression">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat.</p>
             <p class="reviewer-name"> <u>Nama_Pengunjung, <span>Tahun</span></u> </p>
           </div>
@@ -227,19 +231,18 @@
           </div>
           <div class="col-4">
             <ul class="list-group">
-              <li><a href="">Home</a></li>
-              <li><a href="">Gallery</a></li>
-              <li><a href="">Pelisan The Series</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#series">Pelisan The Series</a></li>
+              <li><a href="#about-us">About Us</a></li>
             </ul>
           </div>
           <div class="col-2 offset-1">
-            <p> <strong>Kantor Desa Langgahan</strong> Jl. Tukad Pelisan No 32 Kintamani, Bangli Bali</p>
+            <p> <strong>Kantor Desa Langgahan</strong> Jl. Tukad Pelisan No 32 <br> Kintamani, Bangli <br> Bali</p>
             <p> <strong>Phone Number</strong> : </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row copyright">
           <div class="col-12 text-center">
             <p>Copyright &copy; Pokdarwis 2021</p>
           </div>
@@ -251,5 +254,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>-->
+
+    <!-- For Gmaps API Purpose, the file have ignored in .gitignore file -->
+    <script src="/js/api.js"></script>
   </body>
 </html>

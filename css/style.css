@@ -17,7 +17,7 @@ body {
     top: 0;
 }
 
-ul{
+.navbar ul{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -26,13 +26,13 @@ ul{
     align-items: center;
 }
 
-li.nav{
+.navbar li .nav{
     display: inline;
     padding-right: 10px;
     text-align: center;
 }
 
-li.logo{
+.navbar li .logo{
     font-size: 2.2vw;
 }
 
@@ -103,7 +103,7 @@ a{
     height: 3vw;
     top: 160px;
     left: -3px;
-    background: radial-gradient(424.21% 424.21% at 31.54% -151.44%, rgba(239, 130, 1, 0.7) 0%, rgba(239, 130, 1, 0.1) 100%);
+    background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(239, 130, 1, 0.77) 0%, rgba(239, 130, 1, 0.05) 100%);
     border: 1px solid rgba(239, 130, 1, 0.2);
     filter: drop-shadow(4px 3px 3px rgba(239, 130, 1, 0.25));
     backdrop-filter: blur(5px);
@@ -158,9 +158,9 @@ a{
     padding-top: 1vw;
     font-size: 2.5vw;
     padding: 10px;
-    font-weight: 800;
+    font-weight: bold;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -169,11 +169,12 @@ a{
     letter-spacing: 8px;
 }
 
-.fee span {
+.fee .row-fee span {
     display: block;
     font-size: 1.7vw;
-    font-weight: 600
+    font-weight: normal;
 }
+
 
 /* About us */
 
@@ -182,6 +183,15 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 1845px; */
+    position: relative;
+}
+
+.about-us .gradient {
+    /* top: 50%;
+    position: absolute; */
+    /* height: 100px; */
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 15%);
 }
 
 .about-us .container {
@@ -272,7 +282,9 @@ a{
 
 /* Location */
 .location {
-    background-color: #F2F2F2;
+    background-image: url(/assets/background/fields-bali-are-photographed-from-drone.jpg);
+    background-size: cover;
+    /* background-position: center; */
 }
 
 .location iframe {
@@ -285,15 +297,15 @@ a{
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
-    color: #054000;
+    color: white;
 }
 
-.location p {
+.location .information {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    color: #054000;
+    color: white;
     text-align: left;
 }
 
@@ -304,6 +316,23 @@ a{
 
 .location .container {
     padding-bottom: 50px;
+}
+
+.location button {
+    width: 250px;
+    height: 54.81px;
+    background: radial-gradient(194.09% 244.49% at 41.7% -66.6%, rgba(255, 255, 255, 0.73) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(5px);
+    border: 0px;
+    /* Note: backdrop-filter has minimal browser support */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* Review */
@@ -360,6 +389,10 @@ a{
     text-underline-offset: 10px;
 }
 
+.review .container {
+    padding-bottom: 50px;
+}
+
 /* Footer */
 
 .footer {
@@ -383,4 +416,9 @@ a{
 
 .footer p {
     margin-bottom: 5px;
+}
+
+.footer .unorder-list-of-information a {
+    display: block!important;
+    font-weight: normal;
 }

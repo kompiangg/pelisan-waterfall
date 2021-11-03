@@ -185,6 +185,9 @@ a{
     font-weight: normal;
 }
 
+.series{
+    transition: all ease 0.5s;
+}
 /* Series */
 
 .series h2 {
@@ -196,6 +199,59 @@ a{
 
 .series h2 span {
     font-weight: bold;
+}
+
+
+
+#video{
+    transition: all ease 0.5s;
+    opacity: 1;
+}
+
+.animation{
+    opacity: 0.5;
+
+}
+
+.series .video{
+    transition: none;
+    /* transition: all ease 0.5s; */
+}
+
+#video3{
+    width: 28vw;height: 13.979vw;z-index: -99;margin-left: -16.912vw;text-align: right;background-color: #c4c4c4cc;
+}
+
+#videomain{
+    width: 32vw;height:17.979vw;background-color: #C4C4C4;z-index: 2;box-shadow: 0 0 0 10px rgb(64, 64, 64, 0.4)
+}
+
+#video1{
+    width: 28vw;height: 13.979vw;background-color: #c4c4c4cc;z-index: -99;margin-right: -16.912vw;
+}
+
+#video1 img,
+#videomain img,
+#video3 img{
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover;
+}
+
+#series #video{
+    display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 2vw;
+}
+
+#series #seriesButton button{
+    height: 15px;width:15px;border-radius: 100%;background-color: #C4C4C4;border: none;margin-left: 10px;
+}
+
+#series #seriesButton{
+    display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 3vw;
+}
+
+#seriesTitle{
+    display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 2vw;font-family: Poppins;
 }
 
 /* About us */

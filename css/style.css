@@ -260,18 +260,19 @@ a{
 }
 
 #review3{
-    width: 13vw;height: 9vw;z-index: -99;
-    /* margin-left: -16.912vw; */
+    width: 13vw;height: 8vw;z-index: -99;
+    margin-left: -5.5vw;
     text-align: right;background-color: #c4c4c4cc;
 }
 
 #reviewmain{
-    width: 20vw;height:13vw;background-color: #C4C4C4;z-index: 2;box-shadow: 0 0 0 10px rgb(64, 64, 64, 0.4)
+    width: 20vw;height:12.5vw;background-color: #C4C4C4;z-index: 2;
+    box-shadow: 0 0 0 10px rgb(64, 64, 64, 0.4);
 }
 
 #review1{
-    width: 13vw;height: 9vw;background-color: #c4c4c4cc;z-index: -99;
-    /* margin-right: -16.912vw; */
+    width: 13vw;height: 8vw;background-color: #c4c4c4cc;z-index: -99;
+    margin-right: -5.5vw;
 }
 #review1 img,
 #reviewmain img,
@@ -279,6 +280,14 @@ a{
     max-width:100%;
     max-height:100%;
     object-fit: cover;
+}
+
+#review #reviewButton{
+    display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 3vw;
+}
+
+#review #reviewButton button{
+    height: 15px;width:15px;border-radius: 100%;background-color: #C4C4C4;border: none;margin-left: 10px;
 }
 /* About us */
 

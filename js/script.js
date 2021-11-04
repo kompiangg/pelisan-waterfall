@@ -1,9 +1,27 @@
 // console.log("sa");
+var review = [];
+var nama = [];
+var foto = [];
+var foto2 = [];
+var foto3 = [];
+
+review[0] = '<p id="reviewr" class="reviewer-impression">Wisata alam di Bali, air terjun Pelisan di Desa Langgahan yang belum banyak orang tahu.</p>';
+review[1] = '<p id="reviewr" class="reviewer-impression">Air Terjun Pelisan memiliki panorama yang indah, dengan  beberapa pohon jeruk yang bisa ditemui, dan air nya yang jernih.</p>';
+review[2] = '<p id="reviewr" class="reviewer-impression">Salah satu surga tersembunyi di Bali, yang menyimpan banyak keindahan dan tradisi.</p>';
+review[3] = '<p id="reviewr" class="reviewer-impression">Destinasi wisata dengan keunikan yang memanjakan mata. Pemandangan yang indah nan asri sangat menarik untuk dinikmati.</p>';
+review[4] = '<p id="reviewr" class="reviewer-impression">Tempat yang tenang dan damai, sangat cocok untuk para penikmat  kesunyian.</p>';
+
+nama[0] = '<p id="nama" class="reviewer-name"> <u>Vynna Valencia</u></p>';
+nama[1] = '<p id="nama" class="reviewer-name"> <u>May Danawati</u></p>';
+nama[2] = '<p id="nama" class="reviewer-name"> <u>Ari Laksmi</u></p>';
+nama[3] = '<p id="nama" class="reviewer-name"> <u>Bulan Trisna</u></p>';
+nama[4] = '<p id="nama" class="reviewer-name"> <u>Andy Prawira</u></p>';
+
 var videoArray = [];
 
 // Crumb Locket
 videoArray[0] = '<iframe id="kiri" width="350" height="200" src="https://www.youtube.com/embed/BqnG_Ei35JE?modestbranding=1&showinfo=0"></iframe>';
-console.log(videoArray[0]);
+console.log(review[0]);
 
 /* <iframe id="kiri" width="350" height="200" src="https://www.youtube.com/embed/V5YOhcAof8I"></iframe> */
 
@@ -286,3 +304,208 @@ function list(){
 //     console.log(x);
 //     return x;
 // }
+
+// BAGIAN REVIEW
+// BAGIAN REVIEW
+// BAGIAN REVIEW
+// BAGIAN REVIEW
+
+
+
+y = 0;
+
+function r1(){
+    y = 0;
+    $("#r2").css("background-color", "#C4C4C4");
+    $("#r3").css("background-color", "#C4C4C4");
+    $("#r4").css("background-color", "#C4C4C4");
+    $("#r5").css("background-color", "#C4C4C4");
+    $("#r1").css("background-color", "#000000");
+
+    return x;
+}
+function r2(){
+    y = 1;
+    $("#r1").css("background-color", "#C4C4C4");
+    $("#r2").css("background-color", "#000000");
+    $("#r3").css("background-color", "#C4C4C4");
+    $("#r4").css("background-color", "#C4C4C4");
+    $("#r5").css("background-color", "#C4C4C4");
+
+    return x;
+}
+function r3(){
+    y = 2;
+    $("#r2").css("background-color", "#C4C4C4");
+    $("#r3").css("background-color", "#000000");
+    $("#r4").css("background-color", "#C4C4C4");
+    $("#r5").css("background-color", "#C4C4C4");
+    $("#r1").css("background-color", "#C4C4C4");
+
+    return x;
+}
+function r4(){
+    y = 3;
+    $("#r3").css("background-color", "#C4C4C4");
+    $("#r4").css("background-color", "#000000");
+    $("#r5").css("background-color", "#C4C4C4");
+    $("#r1").css("background-color", "#C4C4C4");
+    $("#r2").css("background-color", "#C4C4C4");
+
+    return x;
+}
+function r5(){
+    x = 4;
+    $("#r4").css("background-color", "#C4C4C4");
+    $("#r5").css("background-color", "#000000");
+    $("#r1").css("background-color", "#C4C4C4");
+    $("#r2").css("background-color", "#C4C4C4");
+    $("#r3").css("background-color", "#C4C4C4");
+    $("#r4").css("background-color", "#C4C4C4");
+
+    return x;
+}
+
+function listReview(){
+    if(y == 0){
+        $('#kirir').fadeOut("slow", function(){
+            var div =  $('<img id="kirir" src="assets/review/andi.png">').hide();
+            console.log(review[0]);
+            $(this).replaceWith(div);
+            $('#kirir').fadeIn("slow");
+        });
+        $('#utamar').fadeOut("slow", function(){
+            var div = $('<img id="utamar" src="assets/review/vvvv.jpg">').hide();
+            $(this).replaceWith(div);
+            $('#utamar').fadeIn("slow");
+        });
+        $('#kananr').fadeOut("slow", function(){
+            var div = $('<img id="kananr" src="assets/review/maysa.jpg">').hide();
+            $(this).replaceWith(div);
+            $('#kananr').fadeIn("slow");
+        });
+        $('#reviewr').fadeOut("slow", function(){
+            var reviews = $(review[0]).hide();
+            $("#reviewr").replaceWith(reviews);
+            $('#reviewr').fadeIn("slow");
+        });
+        $('#nama').fadeOut("slow", function(){
+            var text = $(nama[0]).hide();
+            $("#nama").replaceWith(text);
+            $('#nama').fadeIn("slow");
+        });
+        x =x+1;
+    }else if(y == 1){
+        $('#kirir').fadeOut("slow", function(){
+            var div =  $('<img id="kirir" src="assets/review/vvvv.jpg">').hide();
+            console.log(review[0]);
+            $(this).replaceWith(div);
+            $('#kirir').fadeIn("slow");
+        });
+        $('#utamar').fadeOut("slow", function(){
+            var div = $('<img id="utamar" src="assets/review/maysa.jpg">').hide();
+            $(this).replaceWith(div);
+            $('#utamar').fadeIn("slow");
+        });
+        $('#kananr').fadeOut("slow", function(){
+            var div = $('<img id="kananr" src="assets/review/ari.jpg">').hide();
+            $(this).replaceWith(div);
+            $('#kananr').fadeIn("slow");
+        });
+        $('#reviewr').fadeOut("slow", function(){
+            var reviews = $(review[1]).hide();
+            $("#reviewr").replaceWith(reviews);
+            $('#reviewr').fadeIn("slow");
+        });
+        $('#nama').fadeOut("slow", function(){
+            var text = $(nama[1]).hide();
+            $("#nama").replaceWith(text);
+            $('#nama').fadeIn("slow");
+        });
+        x =x+1;
+    }else if(y == 2){
+        $('#kirir').fadeOut("slow", function(){
+            var div =  $('<img id="kirir" src="assets/review/maysa.jpg">').hide();
+            console.log(review[0]);
+            $(this).replaceWith(div);
+            $('#kirir').fadeIn("slow");
+        });
+        $('#utamar').fadeOut("slow", function(){
+            var div = $('<img id="utamar" src="assets/review/ari.jpg">').hide();
+            $(this).replaceWith(div);
+            $('#utamar').fadeIn("slow");
+        });
+        $('#kananr').fadeOut("slow", function(){
+            var div = $('<img id="kananr" src="assets/review/bulan.jpg">').hide();
+            $(this).replaceWith(div);
+            $('#kananr').fadeIn("slow");
+        });
+        $('#reviewr').fadeOut("slow", function(){
+            var reviews = $(review[2]).hide();
+            $("#reviewr").replaceWith(reviews);
+            $('#reviewr').fadeIn("slow");
+        });
+        $('#nama').fadeOut("slow", function(){
+            var text = $(nama[2]).hide();
+            $("#nama").replaceWith(text);
+            $('#nama').fadeIn("slow");
+        });
+        x =x+1;
+    }else if(y == 3){
+        $('#kirir').fadeOut("slow", function(){
+            var div =  $('<img id="kirir" src="assets/review/ari.jpg">').hide();
+            console.log(review[0]);
+            $(this).replaceWith(div);
+            $('#kirir').fadeIn("slow");
+        });
+        $('#utamar').fadeOut("slow", function(){
+            var div = $('<img id="utamar" src="assets/review/bulan.jpg">').hide();
+            $(this).replaceWith(div);
+            $('#utamar').fadeIn("slow");
+        });
+        $('#kananr').fadeOut("slow", function(){
+            var div = $('<img id="kananr" src="assets/review/andi.png">').hide();
+            $(this).replaceWith(div);
+            $('#kananr').fadeIn("slow");
+        });
+        $('#reviewr').fadeOut("slow", function(){
+            var reviews = $(review[3]).hide();
+            $("#reviewr").replaceWith(reviews);
+            $('#reviewr').fadeIn("slow");
+        });
+        $('#nama').fadeOut("slow", function(){
+            var text = $(nama[3]).hide();
+            $("#nama").replaceWith(text);
+            $('#nama').fadeIn("slow");
+        });
+        x =x+1;
+    }else if(y == 4){
+        $('#kirir').fadeOut("slow", function(){
+            var div =  $('<img id="kirir" src="assets/review/bulan.jpg">').hide();
+            console.log(review[0]);
+            $(this).replaceWith(div);
+            $('#kirir').fadeIn("slow");
+        });
+        $('#utamar').fadeOut("slow", function(){
+            var div = $('<img id="utamar" src="assets/review/andi.png">').hide();
+            $(this).replaceWith(div);
+            $('#utamar').fadeIn("slow");
+        });
+        $('#kananr').fadeOut("slow", function(){
+            var div = $('<img id="kananr" src="assets/review/vvvv.jpg">').hide();
+            $(this).replaceWith(div);
+            $('#kananr').fadeIn("slow");
+        });
+        $('#reviewr').fadeOut("slow", function(){
+            var reviews = $(review[4]).hide();
+            $("#reviewr").replaceWith(reviews);
+            $('#reviewr').fadeIn("slow");
+        });
+        $('#nama').fadeOut("slow", function(){
+            var text = $(nama[4]).hide();
+            $("#nama").replaceWith(text);
+            $('#nama').fadeIn("slow");
+        });
+        x =x+1;
+    }
+}

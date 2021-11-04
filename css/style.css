@@ -254,6 +254,32 @@ a{
     display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 2vw;font-family: Poppins;
 }
 
+/* REVIEW */
+#review{
+    display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 2vw;margin-top: 5vw;
+}
+
+#review3{
+    width: 13vw;height: 9vw;z-index: -99;
+    /* margin-left: -16.912vw; */
+    text-align: right;background-color: #c4c4c4cc;
+}
+
+#reviewmain{
+    width: 20vw;height:13vw;background-color: #C4C4C4;z-index: 2;box-shadow: 0 0 0 10px rgb(64, 64, 64, 0.4)
+}
+
+#review1{
+    width: 13vw;height: 9vw;background-color: #c4c4c4cc;z-index: -99;
+    /* margin-right: -16.912vw; */
+}
+#review1 img,
+#reviewmain img,
+#review3 img{
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover;
+}
 /* About us */
 
 .about-us{

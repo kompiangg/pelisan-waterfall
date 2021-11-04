@@ -14,49 +14,101 @@ body {
 
 /* Navbar */
 
-.navbar {
+.navbar{
     width: 100%;
-    height: 5.5vw;
+    height: 3.3vw;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     position: fixed;
     font-family: 'Poppins',sans-serif;
     z-index: 50;
     top: 0;
-}
-
-.navbar .container {
     padding-top: 0px;
     padding-bottom: 0px;
+    border-bottom: 2px solid rgba(239, 130, 1, 0.2);
+}
+
+.navbar .container-fluid{
+    align-items: baseline;
+    padding: 0;
+    padding-bottom: 0px;
+    margin: 0 3vw;
+}
+.navbar .container-fluid .kiri{
+    display: flex;
+    align-items: center;
+}
+
+span.logo{
+    font-size: 1.3vw;
+}
+
+span.logo a{
+    padding-right: 1.8vw;
+    border-right: .1vw solid bisque;
+}
+
+.menu{
+    font-size: 0.76vw;
 }
 
 ul{
+    justify-content: flex-start;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 1.8vw;
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+}
+
+#active{
+    border-bottom: 2px solid #EF8201;
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
 li.nav{
     display: inline;
-    padding-right: 10px;
+    padding: 1.03vw .5vw;
     text-align: center;
+    transition: .4s;
+    border-bottom: 2px solid rgba(239, 130, 1, 0);
+    cursor: pointer;
 }
 
-li.logo{
-    font-size: 2.2vw;
+li.nav:hover{
+    border-bottom: 2px solid #EF8201;
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
-.batas{
-    color: #EF8201;
-    font-size: 2.2vw;
-    padding-right: 10px;
+/* li.nav a{
+    transition: .3s;
+    padding: 1vw 0;
+}
+*/
+a:hover{
+    color: white;
+} 
+
+#id{
+    padding-right: 1px;
+    display: flex;
+    justify-content: right;
+    outline: none;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 0.88vw;
+    transition: .3s;
 }
 
-.menu{
-    font-size: 2.2vw;
+option{
+    color: #000000;
+    transition: .3s;
+}
+
+.select-items{
+    background: none;
+    color: #000000;
 }
 
 a{

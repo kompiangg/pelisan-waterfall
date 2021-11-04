@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en" id="home">
   <head>
     <meta charset="UTF-8">
@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
-
+    
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Pelisan Waterfall</title>
   </head>
   <body>
@@ -63,7 +65,7 @@
           <div class="orange-line"></div>
 
           <div class="carousel-text-about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat. Pellentesque fermentum,  nisi a lacinia porta, mauris erat congue felis, a pretium metus ipsum sed augue. Vivamus augue eros, placerat ac lobortis accumsan.</p>
+            <p>Pulau Bali tidak selalu tentang pantai. Banyak surga tersembunyi yang menunggu untuk ditemui. Salah satunya adalah air terjun Pelisan ini, yang berlokasi di kecamatan Kintamani, kabupaten Bangli. Surga tersembunyi ini, menunggu untuk dijelajahi.</p>
           </div>
 
           <div class="carousel-button">
@@ -104,6 +106,34 @@
           <div class="col-12 text-center">
             <h2><span>Pelisan</span> The Series</h2>
           </div>
+          <div id="video" class="video">
+            <div id="left-arrow">
+              <img width="80px" height="auto" id="left" src="assets/series/angle-down 2.png" alt="Left">
+            </div>
+            <div id="video1">
+              <img id="kiri" src="assets/series/ep5fix.jpg">
+            </div>
+            <div id="videomain">
+              <img id="utama" src="assets/series/ep1fix.jpg">
+            </div>
+            <div id="video3">
+              <img id="kanan" src="assets/series/ep2fix.jpg">
+            </div>
+            <div id="right-arrow">
+              <img width="80px" height="auto" id="right" src="assets/series/angle-down 3.png" alt="right">
+            </div>
+          </div>
+
+          <div id="seriesButton">
+            <button id="ep1" onclick="ep1();list()"></button>
+            <button id="ep2" onclick="ep2();list()"></button>
+            <button id="ep3" onclick="ep3();list()"></button>
+            <button id="ep4" onclick="ep4();list()"></button>
+            <button id="ep5" onclick="ep5();list()"></button>
+          </div>
+          <div id="seriesTitle">
+            <h1 id="textTitle">The Beauty of Langgahan : <b>Episode 1</b></h1>
+          </div>
         </div>
         <div class="row">
         </div>
@@ -131,12 +161,12 @@
     
     <!-- Start Melukad Section -->
     <section class="melukad">
-      <div class="container gx-lg-5">
+      <div class="container gx-lg-6">
         <div class="row">
-          <div class="col-md-6">
-            <img src="#" alt="Melukad" style="align-items: right;">
+          <div class="col-md-6 text-center">
+            <img src="/assets/gallery/melukat.jpg" alt="Melukad" style="align-items: right;">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" style="padding-left: 2vw;">
             <h2>Melukat</h2>
             <p>Kalian dapat melukat di air terjun Pelisan, karena terdapat areal suci khusus. Melukat merupakan salah satu upacara pembersihan dalam diri manusia. Upacara melukat hingga kini tetap dilakukan dan sudah menjadi tradisi bagi umat Hindu di Bali yang biasa dilakukan di sumber air tertentu.</p>
           </div>
@@ -176,19 +206,70 @@
 
     <!-- Start Div Gallery -->
     <section  class="gallery" id="gallery">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2>Gallery</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2>Gallery</h2>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-center">
-            <div class="gallery-small">
+          <div class="row">
+            <div class="container-slideshow">
+              
+              <div class="slide-full">
+                <img src="/assets/gallery/landscape/JPEG/Copy of _DSC1949.jpg" alt="">
+              </div>
+    
+              <div class="slide-full">
+                <img src="/assets/gallery/landscape/JPEG/Copy of _DSC1958.jpg" alt="">
+              </div>
+    
+              <div class="slide-full">
+                <img src="/assets/gallery/landscape/JPEG/Copy of _DSC1979.jpg" alt="">
+              </div>
+    
+              <div class="slide-full">
+                <img src="/assets/gallery/landscape/JPEG/Copy of _DSC1982.jpg" alt="">
+              </div>
+    
+              <div class="slide-full">
+                <img src="/assets/gallery/landscape/JPEG/Copy of _DSC1993.jpg" alt="">
+              </div>
+    
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+              <div class="row-gallery">
+    
+                <div class="column-gallery">
+                  <img class="demo cursor" src="/assets/gallery/landscape/JPEG/Copy of _DSC1949_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                </div>
+                
+                <div class="column-gallery">
+                  <img class="demo cursor" src="/assets/gallery/landscape/JPEG/Copy of _DSC1958_1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+                </div>
+                
+                <div class="column-gallery">
+                  <img class="demo cursor" src="/assets/gallery/landscape/JPEG/Copy of _DSC1979_1.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+                </div>
+                
+                <div class="column-gallery">
+                  <img class="demo cursor" src="/assets/gallery/landscape/JPEG/Copy of _DSC1982_1.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+                </div>
+                
+                <div class="column-gallery">
+                  <img class="demo cursor" src="/assets/gallery/landscape/JPEG/Copy of _DSC1993_1.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+                </div>
+    
+              </div>
+            </div>
+  
+            <div class="button-gallery">
+              <a href="gallery.html">
+                <button>View more</button>
+              </a>
             </div>
           </div>
         </div>
-      </div>
     </section>
     <!-- End Div Gallery -->
 
@@ -260,11 +341,34 @@
         </div>
         <div class="row">
           <div class="col-md-7">
-            <img src="" alt="reviewer carousel">
+            <div id="review" class="review">
+              <div id="left-arrow">
+                <img width="80px" height="auto" id="left" src="assets/series/angle-down 2.png" alt="Left">
+              </div>
+              <div id="review1">
+                <img id="kirir" src="assets/review/ari.jpg">
+              </div>
+              <div id="reviewmain">
+                <img id="utamar" src="assets/review/vvvv.jpg">
+              </div>
+              <div id="review3">
+                <img id="kananr" src="assets/review/bulan.jpg">
+              </div>
+              <div id="right-arrow">
+                <img width="80px" height="auto" id="right" src="assets/series/angle-down 3.png" alt="right">
+              </div>
+            </div>
+            <div id="reviewButton">
+              <button id="r1" onclick="r1();listReview()"></button>
+              <button id="r2" onclick="r2();listReview()"></button>
+              <button id="r3" onclick="r3();listReview()"></button>
+              <button id="r4" onclick="r4();listReview()"></button>
+              <button id="r5" onclick="r5();listReview()"></button>
+            </div>
           </div>
           <div class="col-md-5">
-            <p class="reviewer-impression">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat.</p>
-            <p class="reviewer-name"> <u>Nama_Pengunjung, <span>Tahun</span></u> </p>
+            <p id="reviewr" class="reviewer-impression">Wisata alam di Bali, air terjun Pelisan di Desa Langgahan yang belum banyak orang tahu.</p>
+            <p id="nama" class="reviewer-name"> <u>Vynna Valencia</u></p>
           </div>
         </div>
       </div>
@@ -278,15 +382,13 @@
           <div class="col-md-3 text-center">
             <img src="" alt="brand langgahan">
             <p class="follow-us"> <strong>Follow Us On</strong> </p>
-            <div class="row" style="padding-top: 8px;">
-              <div class="col-12">
-                <div class="border-follow-us">
-                  <a href="https://www.instagram.com/pelisanwaterfall/" target="blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                    </svg>
-                  </a>
-                </div>
+            <div class="row">
+              <div class="col-12 class-center">
+                <a href="https://www.instagram.com/pelisanwaterfall/" target="blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg> @pelisanwaterfall
+                </a>
               </div>
             </div>
           </div>
@@ -321,6 +423,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>-->
 
     <!-- For Gmaps API Purpose, the file have ignored in .gitignore file -->
+    <script src="/js/slideshow.js"></script>
     <script src="/js/api.js"></script>
     <script src="/js/translate.js"></script>
   </body>

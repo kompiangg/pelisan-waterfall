@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en" id="home">
   <head>
     <meta charset="UTF-8">
@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
-
+    
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Pelisan Waterfall</title>
   </head>
   <body>
@@ -94,6 +96,34 @@
         <div class="row ">
           <div class="col-12 text-center">
             <h2><span>Pelisan</span> The Series</h2>
+          </div>
+          <div id="video" class="video">
+            <div id="left-arrow">
+              <img width="80px" height="auto" id="left" src="assets/series/angle-down 2.png" alt="Left">
+            </div>
+            <div id="video1">
+              <img id="kiri" src="assets/series/ep5fix.jpg">
+            </div>
+            <div id="videomain">
+              <img id="utama" src="assets/series/ep1fix.jpg">
+            </div>
+            <div id="video3">
+              <img id="kanan" src="assets/series/ep2fix.jpg">
+            </div>
+            <div id="right-arrow">
+              <img width="80px" height="auto" id="right" src="assets/series/angle-down 3.png" alt="right">
+            </div>
+          </div>
+
+          <div id="seriesButton" style="">
+            <button id="ep1" onclick="ep1();list()"></button>
+            <button id="ep2" onclick="ep2();list()"></button>
+            <button id="ep3" onclick="ep3();list()"></button>
+            <button id="ep4" onclick="ep4();list()"></button>
+            <button id="ep5" onclick="ep5();list()"></button>
+          </div>
+          <div id="seriesTitle" style="">
+            <h1 id="textTitle">The Beauty of Langgahan : <b>Episode 1</b></h1>
           </div>
         </div>
         <div class="row">
@@ -289,7 +319,23 @@
         </div>
         <div class="row">
           <div class="col-md-7">
-            <img src="" alt="reviewer carousel">
+            <div id="review" class="review">
+              <div id="left-arrow">
+                <img width="80px" height="auto" id="left" src="assets/series/angle-down 2.png" alt="Left">
+              </div>
+              <div id="review1">
+                <!-- <img id="kiri" src="assets/series/ep5fix.jpg"> -->
+              </div>
+              <div id="reviewmain">
+                <!-- <img id="utama" src="assets/series/ep1fix.jpg"> -->
+              </div>
+              <div id="review3">
+                <!-- <img id="kanan" src="assets/series/ep2fix.jpg"> -->
+              </div>
+              <div id="right-arrow">
+                <img width="80px" height="auto" id="right" src="assets/series/angle-down 3.png" alt="right">
+              </div>
+            </div>
           </div>
           <div class="col-md-5">
             <p class="reviewer-impression">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar enim a mi feugiat, sit amet tempus ex feugiat.</p>

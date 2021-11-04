@@ -8,8 +8,8 @@ body {
 /* Defined container padding */
 
 .container{
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
 }
 
 /* Navbar */
@@ -255,8 +255,24 @@ a{
 }
 
 /* REVIEW */
+
+.review .container {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.row.review-row-2 {
+    display: flex!important;
+    align-items: center!important;
+    padding-top: 3vw;
+    /* justify-content: center!important; */
+}
+
 #review{
-    display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 2vw;margin-top: 5vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #review3{
@@ -613,8 +629,8 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
 }
 
 .location iframe {
-    width: 30vw;
-    height: 20vw;
+    width: 35vw;
+    height: 23vw;
 }
 
 .location h3{
@@ -640,7 +656,7 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
 }
 
 .location .container {
-    padding-bottom: 50px;
+    padding-bottom: 5vw;
 }
 
 .location button {

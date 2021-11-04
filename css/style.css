@@ -479,12 +479,8 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     font-family: 'Poppins', sans-serif;
     font-size: 3vw;
     font-weight: bold;
-    color: white;
-    padding-bottom: 3vw;
-}
-
-.view-360 h2 {
     color: black;
+    padding-bottom: 3vw;
 }
 
 .view-360 p {
@@ -492,6 +488,29 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     font-size: 2vw;
     font-weight: bold;
     color: #000000;
+}
+
+.view-360 .row .maps-360 img.maps-langgahan-360 {
+    position: relative;
+    max-height: 60vh;
+    max-width: 60vw;
+    padding-bottom: 3vw;
+}
+
+.view-360 .maps-360{
+    position: relative;
+}
+
+.view-360 .maps-360 .mark-maps {
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    z-index: 10;
+}
+
+.mark-maps-1 {
+    top: 38%;
+    left: 34%;
 }
 
 /* Location */

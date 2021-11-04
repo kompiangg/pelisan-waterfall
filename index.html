@@ -20,15 +20,24 @@
   <body>
     <!-- Start Navbar Section -->
     <div class="navbar">
-      <div class="container">
-        <ul>
-          <li class="logo nav"><a href="#">Hello World</a></li>
-          <li class="batas nav">|</li>
-          <li class="nav menu"><a href="#">Home</a></li>
-          <li class="nav menu"><a href="#">Gallery</a></li>
-          <li class="nav menu"><a href="#">Location</a></li>
-          <li class="nav menu"><a href="#">Contact Us</a></li>
-        </ul>
+      <div class="container-fluid">
+        <div class="kiri">
+          <span class="logo"><a href="#">Hello World</a></span>
+          <ul>
+            <li class="nav menu" id="active"><a href="#">Beranda</a></li>
+            <li class="nav menu"><a href="#">Galeri</a></li>
+            <li class="nav menu"><a href="#">Lokasi</a></li>
+            <li class="nav menu"><a href="#">Kontak Kami</a></li>
+          </ul>
+        </div>
+        <div class="kanan">
+          <select name="langg" id="id">
+            <div class="select-items">
+              <option value="IDN">IDN</option>
+              <option value="ENG">ENG</option>
+            </div>
+          </select>
+        </div>
       </div>
     </div>
     <!-- End Navbar -->

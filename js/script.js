@@ -5,6 +5,7 @@ var foto = [];
 var foto2 = [];
 var foto3 = [];
 
+
 review[0] = '<p id="reviewr" class="reviewer-impression">Wisata alam di Bali, air terjun Pelisan di Desa Langgahan yang belum banyak orang tahu.</p>';
 review[1] = '<p id="reviewr" class="reviewer-impression">Air Terjun Pelisan memiliki panorama yang indah, dengan  beberapa pohon jeruk yang bisa ditemui, dan air nya yang jernih.</p>';
 review[2] = '<p id="reviewr" class="reviewer-impression">Salah satu surga tersembunyi di Bali, yang menyimpan banyak keindahan dan tradisi.</p>';
@@ -322,7 +323,7 @@ function r1(){
     $("#r5").css("background-color", "#C4C4C4");
     $("#r1").css("background-color", "#000000");
 
-    return x;
+    return y;
 }
 function r2(){
     y = 1;
@@ -332,7 +333,7 @@ function r2(){
     $("#r4").css("background-color", "#C4C4C4");
     $("#r5").css("background-color", "#C4C4C4");
 
-    return x;
+    return y;
 }
 function r3(){
     y = 2;
@@ -342,7 +343,7 @@ function r3(){
     $("#r5").css("background-color", "#C4C4C4");
     $("#r1").css("background-color", "#C4C4C4");
 
-    return x;
+    return y;
 }
 function r4(){
     y = 3;
@@ -352,10 +353,10 @@ function r4(){
     $("#r1").css("background-color", "#C4C4C4");
     $("#r2").css("background-color", "#C4C4C4");
 
-    return x;
+    return y;
 }
 function r5(){
-    x = 4;
+    y = 4;
     $("#r4").css("background-color", "#C4C4C4");
     $("#r5").css("background-color", "#000000");
     $("#r1").css("background-color", "#C4C4C4");
@@ -363,7 +364,7 @@ function r5(){
     $("#r3").css("background-color", "#C4C4C4");
     $("#r4").css("background-color", "#C4C4C4");
 
-    return x;
+    return y;
 }
 
 function listReview(){

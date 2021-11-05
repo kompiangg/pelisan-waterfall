@@ -305,6 +305,10 @@ a{
 }
 
 /* REVIEW */
+#tourist-review{
+    display: flex;justify-content: center;align-items: center;
+}
+
 #review{
     display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 3vw;;
 }
@@ -706,13 +710,13 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.85vw;
     color: #054000;
     text-align: left;
 }
 
 .reviewer-impression {
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
 .reviewer-impression::before {
@@ -756,6 +760,7 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     /* height: 270px; */
     background-color: black;
     color: white;
+    /* transition: 0.2s ; */
 }
 
 .footer .container {

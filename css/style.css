@@ -117,6 +117,10 @@ a{
     font-weight: 500;
 }
 
+.navbar .kanan .langg img {
+    height: 1vw;
+}
+
 /* Landing */
 .carousel-inner {
     /* kuubah height nya jadi max height */

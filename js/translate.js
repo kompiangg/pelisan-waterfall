@@ -23,9 +23,9 @@ function updateContent() {
     will_translate[6].outerHTML = '<button class="will-translate">View more</button>';
     will_translate[7].outerHTML = '<h2 class="will-translate">360<sup>o</sup> View</h2>';
     will_translate[8].outerHTML = '<p class="will-translate">Feels virtual tour experience by click the mark on map</p>';
-    will_translate[9].outerHTML = '<h3 class="will-translate">Location</h3>';
+    will_translate[9].outerHTML = '<h2 class="will-translate">Location</h2>';
     will_translate[10].outerHTML = '<button class="will-translate">Visit Us On Gmaps</button>';
-    will_translate[11].outerHTML = '<h3 class="will-translate">Tourist Review</h3>';
+    will_translate[11].outerHTML = '<h2 class="will-translate">Tourist Review</h2>';
     will_translate[12].outerHTML = '<p class="follow-us will-translate"> <strong>Follow Us On</strong> </p>';
     will_translate[13].outerHTML = '<h6 class="will-translate"> <strong>Featured Information</strong> </h6>';
     will_translate[14].outerHTML = '<a class="will-translate" href="#home">Home</a>';
@@ -53,9 +53,9 @@ function updateContent() {
     will_translate[6].outerHTML = '<button class="will-translate">Foto Lainnya</button>';
     will_translate[7].outerHTML = '<h2 class="will-translate">Tampilan  360<sup>o</sup></h2>';
     will_translate[8].outerHTML = '<p class="will-translate">Rasakan pengalaman perjalanan virtual dengan mengklik tanda pada peta</p>';
-    will_translate[9].outerHTML = '<h3 class="will-translate">Lokasi</h3>';
+    will_translate[9].outerHTML = '<h2 class="will-translate">Lokasi</h2>';
     will_translate[10].outerHTML = '<button class="will-translate">Kunjungi di Gmaps</button>';
-    will_translate[11].outerHTML = '<h3 class="will-translate">Ulasan Pengunjung</h3>';
+    will_translate[11].outerHTML = '<h2 class="will-translate">Ulasan Pengunjung</h2>';
     will_translate[12].outerHTML = '<p class="follow-us will-translate"> <strong>Ikuti Kami</strong> </p>';
     will_translate[13].outerHTML = '<h6 class="will-translate"> <strong>Informasi Pilihan</strong> </h6>';
     will_translate[14].outerHTML = '<a class="will-translate" href="#home">Beranda</a>';

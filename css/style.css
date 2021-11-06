@@ -36,15 +36,11 @@ body {
     align-items: baseline;
     padding: 0;
     padding-bottom: 0px;
-    margin: 0 3vw;
+    margin: 0 3em;
 }
 .navbar .container-fluid .kiri{
     display: flex;
     align-items: center;
-}
-
-span.logo{
-    font-size: 1.3vw;
 }
 
 .kiri a img{
@@ -118,23 +114,49 @@ option{
 }
 
 /* Landing */
-.carousel-inner {
+
+.carousel-inner,
+.carousel-item .carousel-item-1,
+.carousel-item .carousel-item-2,
+.carousel-item .carousel-item-3{
     /* kuubah height nya jadi max height */
     /* max-width: 1920px;   */
-    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
 }
 
-.carousel-text {
-    top: 18%;
-    left: 10%;
+.carousel-item .carousel-item-1,
+.carousel-item .carousel-item-2,
+.carousel-item .carousel-item-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item .carousel-item-1{
+    background-image: url(/assets/hero_images/1_darken.jpg);
+}
+
+.carousel-item .carousel-item-2{
+    background-image: url(/assets/hero_images/2_darken.jpg);
+}
+
+.carousel-item .carousel-item-3{
+    background-image: url(/assets/hero_images/3_darken.jpg);
+}
+
+.carousel-text{
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+    height: 100%;
     z-index: 10;
 }
 
 .carousel-text-content h1 {
     font-family: 'Tinos', serif;
     color: white;
-    /* font-size: 4.5em; */
-    font-size: 3.5vw;
+    padding-bottom: 0.2em;
+    font-size: 4em;
     font-weight: 400;
 }
 
@@ -143,86 +165,54 @@ option{
 }
 
 .carousel-text .orange-line {
-    position: relative;
-    top: 52px;
-    width: 11vw;
-    height: 0.3vw;
+    /* top: 52px; */
+    width: 14em;
+    height: 0.3em;
     background: #EF8201;
+    margin-bottom: 2em;
 }
 
-.carousel-text .carousel-text-about {
-    position: relative;
-    top: 4vw;
-    font-size: 1vw;
-    max-width: 38vw;
-    height: 10vw;
+.carousel-text p {
+    padding-right: 55vw;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    line-height: 180.5%;
-    /* or 34px */
-    color: #FFFFFF;
+    line-height: 1.8em;
+    color: #ffffff;
 }
 
 .carousel-text .carousel-button button {
-    position: relative;
-    width: 10.8vw;
-    height: 3vw;
-    top: 160px;
-    left: -3px;
+    /* width: 10.8vw; */
+    padding: 0.5em 1.5em;
     background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(239, 130, 1, 0.77) 0%, rgba(239, 130, 1, 0.05) 100%);
     border: 1px solid rgba(239, 130, 1, 0.2);
     filter: drop-shadow(4px 3px 3px rgba(239, 130, 1, 0.25));
     backdrop-filter: blur(5px);
-    border-radius: 1vw;
+    border-radius: 20px;
     /* Font */
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 1.2vw;
+    font-size: 1.5em;
     color: #FFFFFF;
-    
 }
 
 .carousel-text .carousel-button button:hover {
     background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(173, 95, 0, 0.77) 0%, rgba(239, 130, 1, 0.05) 100%);
 }
 
-/* ubahan font diatas-klo mau dirubah, hapus aja dibawah */
-/* --- */
-.carousel-text {
-    top: 10vw!important;
-}
-
-.carousel-text .carousel-button button{
-    top: 3vw;
-}
-.carousel-text .carousel-button button p{
-    font-size: 1.1vw;
-}
-.carousel-text .orange-line {
-    top: 1.5vw!important;
-}
-/* ---- */
-
 /* Fee */
 
 .fee{
     background: url('../assets/hero_images/fee_hd.png') no-repeat;
     background-size:cover;
-    /* width: 100vw; */
-    /* height: 350px!important; */
     text-align: center;
-    /* font-family: 'Poppins'; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* padding-top: 66.64%; */
 }
 
 .fee h2,
 .fee p {
-    padding-top: 1vw;
     font-size: 3vw;
     padding: 1vw;
     font-weight: bold;
@@ -238,7 +228,7 @@ option{
 
 .fee .row-fee span {
     display: block;
-    font-size: 1.7vw;
+    font-size: 2vw;
     font-weight: normal;
 }
 
@@ -309,6 +299,9 @@ option{
     display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 2vw;font-family: Poppins;
 }
 
+#seriesTitle h1{
+    font-size: 2.5vw;
+}
 /* REVIEW */
 #tourist-review{
     display: flex;justify-content: center;align-items: center;
@@ -348,19 +341,17 @@ option{
 #review #reviewButton button{
     height: 15px;width:15px;border-radius: 100%;background-color: #C4C4C4;border: none;margin-left: 10px;
 }
+
 /* About us */
 
 .about-us{
     background-image: url(/assets/background/background_aboutus_gallery_pisah_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 1845px; */
-    position: relative;
     color: white;
 }
 
 .about-us .gradient {
-    /* position: absolute; */
     height: 100%;
     width: 100%;
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 30%);
@@ -384,23 +375,6 @@ option{
     font-size: 1vw;
     line-height: 1.7vw;
 }
-
-/* .about-us button {
-    position: absolute;
-    width: 192px;
-    height: 54.81px;
-    background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(239, 130, 1, 0.77) 0%, rgba(239, 130, 1, 0.05) 100%);
-    border: 1px solid rgba(239, 130, 1, 0.2);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
-Note: backdrop-filter has minimal browser support
-    border-radius: 20px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-} */
 
 .about-us img {
     max-height: 25vw;
@@ -449,39 +423,6 @@ Note: backdrop-filter has minimal browser support
     box-shadow: -8px 10px 10px black;
 }
 
-/* Why You Should Visit Pelisan Section */
-
-/* .should-visit {
-    background-color: black;
-    color: white;
-}
-
-.should-visit .gradient {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 15%);
-}
-
-.should-visit .container {
-    padding-bottom: 3vw;
-    padding-top: 3vw;
-}
-
-.should-visit h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3vw;
-    font-weight: bold;
-}
-
-.should-visit p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9vw;
-    line-height: 1.7vw;
-} */
-
-
-
 /* Gallery */
 
 #gallery {
@@ -490,7 +431,6 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     justify-content: center;
     min-height: 90vh;
     background-color: black;
-    position: relative;
     padding-bottom: 2.5vw;
 }
 
@@ -500,11 +440,6 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     font-weight: bold;
     color: white;
     padding-bottom: 1vw;
-}
-
-.container-slideshow {
-    position: relative;
-    /* height: 20vw; */
 }
 
 .container-slideshow::after {
@@ -542,9 +477,6 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     user-select: none;
     -webkit-user-select: none;
     transition: .3s;
-}
-
-.next, .prev {
     margin: 0px 1vw;
     /* border-radius: 3px 0 0 3px; */
 }
@@ -615,7 +547,7 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     backdrop-filter: blur(5px);
     border-radius: 1vw;
     /* Font */
-    padding: 0.5vw 1vw;
+    padding: 0.8vw 1.5vw;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -767,7 +699,7 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     height: 20vw;
 }
 
-.location h3{
+.location h2{
     font-family: 'Poppins', sans-serif;
     font-size: 3vw;
     font-weight: bold;
@@ -779,14 +711,14 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.8vw;
     color: white;
     text-align: left;
 }
 
 .location span {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .location .container {
@@ -794,34 +726,38 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
 }
 
 .location button {
-    width: 250px;
-    height: 54.81px;
     background: radial-gradient(194.09% 244.49% at 41.7% -66.6%, rgba(255, 255, 255, 0.73) 0%, rgba(255, 255, 255, 0.05) 100%);
     backdrop-filter: blur(5px);
+    padding: .8vw 1.8vw;
     border: 0px;
     /* Note: backdrop-filter has minimal browser support */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 12px;
 
     color: white;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .location button:hover {
     background: radial-gradient(194.09% 244.49% at 41.7% -66.6%, rgba(196, 196, 196, 0.73) 0%, rgba(255, 255, 255, 0.05) 100%);
 }
 
+.location .bi-pin-map-fill {
+    height: 3vw;
+    width: 3vw;
+}
+
 /* Review */
 
-.review h3{
+.review h2{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
-    color: #054000;
+    font-size: 3vw;
+    color: #000000;
 }
 
 .review .reviewer-impression,
@@ -830,7 +766,7 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     font-style: normal;
     font-weight: 500;
     font-size: 1.85vw;
-    color: #054000;
+    color: #000000;
     text-align: left;
 }
 
@@ -850,7 +786,7 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    color: #054000;
+    color: #000000;
     text-align: right;
     ;
 }
@@ -879,6 +815,7 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
     /* height: 270px; */
     background-color: black;
     color: white;
+    font-size: 1.5vw;
     /* transition: 0.2s ; */
 }
 
@@ -888,7 +825,7 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
 }
 
 .footer .container .copyright {
-    padding-top: 20px!important;
+    padding-top: 1.5vw!important;
 }
 
 .footer .container {
@@ -896,7 +833,11 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
 }
 
 .footer p {
-    margin-bottom: 5px;
+    margin-bottom: 0.2vw;
+}
+
+.footer a{
+    margin-bottom: 0.2vw;
 }
 
 .footer .unorder-list-of-information a {
@@ -920,7 +861,6 @@ br.logo-line{
     padding-top: 1.5vw;
 }
 
-
 .footer .col-12.class-center {
     padding-top: 0vw;
     display: flex;
@@ -929,12 +869,435 @@ br.logo-line{
 }
 
 .footer svg {
-    width: 1vw;
-    height: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
 }
 
 img.logo{
     width: 13vw;
 }
 
+/* Responsive Section */
 
+/* 
+Breakpoints:
+
+X-Small	            None    <576px
+Small	            sm	    ≥576px
+Medium	            md	    ≥768px
+Large	            lg	    ≥992px
+Extra large	        xl	    ≥1200px
+Extra extra large	xxl	    ≥1400px
+*/
+
+@media only screen and (max-width:1200px) {
+    .carousel-text p {
+        padding-right: 40vw;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    /* Responsive Hero Image*/
+
+    .carousel-text-content h1 {
+        font-size: 3.5em;
+    }
+
+    .carousel-text p {
+        font-size: 1.2em;
+        padding-right: 15em;
+    }
+
+    .carousel-text .orange-line {
+        width: 12em;
+    }
+
+    .carousel-text .carousel-button button {
+        padding: 0.5em 1.3em;
+        border-radius: 15px;
+        font-size: 1.3em;
+    }
+
+    /* Responsive Fee */
+    .fee .row-fee span {
+        font-size: 2vw;
+    }
+
+    /* About Us & Melukad*/
+    .about-us h2,
+    .melukad h2 {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .about-us p,
+    .melukad p {
+        font-size: 1.4vw;
+        line-height: 2vw;
+    }
+
+    /* Gallery */
+    #gallery {
+        min-height: 60vh;
+        padding-bottom: 2.5vw;
+    }
+    
+    .gallery h2 {
+        font-size: 3vw;
+        padding-bottom: 2vw;
+    }
+
+    .prev,
+    .next {
+        top: 38%;
+        width: 3vw;
+        height: 3vw;
+        font-size: 2vw;
+        transition: .3s;
+        margin-right: 2.8vw;
+    }
+
+    .prev:hover,
+    .next:hover {
+        top: 38%;
+    }
+
+    /* Location */
+    .location h2 {
+        font-size: 3vw;
+        padding-bottom: 3vw;
+    }
+
+    .location .information {
+        font-size: 1.7vw;
+        padding-left: 1vw;
+    }
+
+    .location span {
+        font-size: 2.5vw;
+    }
+
+    .location .bi-pin-map-fill {
+        height: 4vw;
+        width: 4vw;
+    }
+
+    /* Review */
+    .review h2 {
+        font-size: 3vw;
+        padding-bottom: 2vw;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .carousel-text-content h1 {
+        font-size: 2.8em;
+    }
+
+    .carousel-text p {
+        font-size: 1em;
+        padding-right: 10em;
+    }
+
+    .carousel-text .orange-line {
+        width: 12em;
+    }
+
+    .carousel-text .carousel-button button {
+        padding: 0.4em 1em;
+        border-radius: 15px;
+        font-size: 1.3em;
+    }
+
+    /* Fee */
+    .fee h2,
+    .fee p {
+        padding-top: 1vw;
+        font-size: 3.4vw;
+        padding: 1vw;
+    }
+
+    /* Responsive The Series */
+    .series {
+        padding-top: 2vw;
+    }
+
+    .series h2 {
+        font-size: 3.4vw;
+        padding-bottom: 2vw;
+    }
+
+    /* About Us & Melukad */
+    .about-us h2,
+    .melukad h2,
+    .gallery h2 {
+        text-align: center;
+        padding-top: 3vw;
+    }
+
+    .about-us p,
+    .melukad p {
+        text-align: center;
+        font-size: 1.8vw;
+        line-height: 2.8vw;
+    }
+
+    /* Gallery */
+    .gallery .slide-full img{
+        margin-left: 0%;
+        margin-right: 0%;
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+    .prev,
+    .next {
+        top: 45%;
+        width: 3vw;
+        height: 3vw;
+        font-size: 2vw;
+        transition: .3s;
+        margin-right: 2.8vw;
+    }
+
+    .prev:hover,
+    .next:hover {
+        top: 45%;
+    }
+
+    .gallery .button-gallery button {
+        padding: 0.9vw 1.5vw;
+        font-size: 1.5vw;
+        color: #FFFFFF;
+    }
+
+    /* Location */
+    .location h2{
+        font-size: 3.8vw;
+        padding-bottom: 2vw;
+    }
+
+    .location .bi-pin-map-fill {
+        display: none;
+    }
+
+    .location .information {
+        padding-top: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        padding-left: 1vw;
+        flex-direction: column;
+    }
+
+    .location .information p {
+        text-align: center;
+    }
+
+    .location button {
+        padding: .8vw 1.8vw;
+        border-radius: 8px;
+        font-size: 2vw;
+    }
+
+    /* Review */
+
+    .review h2{
+        font-size: 3.8vw;
+        padding-bottom: 2vw;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .carousel-text-content h1 {
+        font-size: 2.3em;
+    }
+
+    .carousel-text p {
+        font-size: .9em;
+        padding-right: 8em;
+    }
+
+    .carousel-text .carousel-button button {
+        padding: .5em 1.5em;
+        border-radius: 15px;
+        font-size: 1em;
+    }
+
+    /* Fee */
+    .fee h2,
+    .fee p {
+        font-size: 4vw;
+    }
+
+    .fee .row-fee span {
+        font-size: 3vw;
+    }
+
+    /* Responsive The Series */
+    .series h2 {
+        font-size: 4vw;
+        padding-bottom: 2vw;
+    }
+
+    /* About Us and Melukat and Gallery */
+    .about-us h2,
+    .melukad h2,
+    .gallery h2{
+        font-size: 3.8vw;
+        line-height: 4vw;
+    }
+
+    .about-us p,
+    .melukad p {
+        text-align: center;
+        padding: 0vw 4vw;
+        font-size: 2vw;
+        line-height: 3.3vw;
+    }
+
+    .gallery .button-gallery button {
+        padding: 0.9vw 1.5vw;
+        font-size: 1.7vw;
+        color: #FFFFFF;
+    }
+
+    /* Location */
+    .location h2 {
+        padding-top: 2vw;
+        font-size: 3.8vw;
+    }
+
+    .location .information {
+        padding-top: 2vw;
+        font-size: 2.3vw;
+        padding-left: 1vw;
+        flex-direction: column;
+    }
+
+    .location .information span {
+        font-size: 3vw;
+    }
+
+    .location .information p {
+        text-align: center;
+    }
+
+    .location button {
+        padding: 1vw 1.8vw;
+        border-radius: 8px;
+        font-size: 2vw;
+    }
+
+    /* Review */
+    .review h2 {
+        padding-top: 2vw;
+        font-size: 3.8vw;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .carousel .carousel-text {
+        margin-left: 0px;
+    }
+
+    .carousel .carousel-text-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .carousel-text-content h1 {
+        font-size: 1.9em;
+        
+    }
+
+    .carousel-text p {
+        font-size: .8em;
+        padding: 0px 40px;
+    }
+
+    .carousel-text .orange-line {
+        background: #EF8201;
+        margin-bottom: .8em;
+    }
+
+    .carousel-text .carousel-button button {
+        padding: .5em 1.5em;
+        border-radius: 15px;
+        font-size: 1em;
+    }
+
+    /* Fee */
+    .fee .container {
+        padding-top: 5vw;
+    }
+
+    .fee h2,
+    .fee p {
+        font-size: 5.5vw;
+    }
+
+    .fee .row-fee span {
+        font-size: 3vw;
+    }
+
+    .series h2 {
+        font-size: 5vw;
+        padding-bottom: 2vw;
+    }
+
+    /* About Us and Melukat */
+    .about-us h2,
+    .melukad h2 {
+        font-size: 3.8vw;
+        line-height: 4.9vw;
+    }
+
+    .about-us p,
+    .melukad p {
+        padding: 0vw 3vw;
+        font-size: 2.6vw;
+        line-height: 4vw;
+    }
+
+    /* Gallery */
+    .gallery {
+        min-height: 50vh;
+    }
+
+    .gallery h2 {
+        font-size: 5vw;
+        padding-bottom: 3vw;
+    }
+
+    .gallery .button-gallery button {
+        padding: 1vw 1.5vw;
+        font-size: 2.2vw;
+    }
+
+    .prev,
+    .next {
+        top: 45%;
+        width: 3vw;
+        height: 3vw;
+        font-size: 2vw;
+        transition: .3s;
+        margin-right: 4.3vw;
+    }
+
+    .prev:hover,
+    .next:hover {
+        top: 45%;
+    }
+
+    /* Location */
+
+    .review h2 {
+        font-size: 5vw;
+    }
+}

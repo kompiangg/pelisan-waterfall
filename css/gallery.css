@@ -1,0 +1,25 @@
+/* Tab-Gallery */
+
+.gallery-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    font-family: 'Poppins', serif;
+}
+
+.gallery-wrap .galler-header{
+
+}
+
+.gallery-wrap .gallery-header h3{
+    font-size: 3em;
+    padding: 15px 125px;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+}
+.gallery-wrap .gallery-header h3 span{
+    font-weight: 100;
+}

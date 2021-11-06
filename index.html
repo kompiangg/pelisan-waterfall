@@ -28,10 +28,11 @@
         <div class="kiri">
           <a href="#landing" class="logo"><img src="assets/logo/logo.svg" alt=""></a>
           <ul>
-            <li class="nav menu will-translate-navbar" id="active"><a href="#home">Beranda</a></li>
-            <li class="nav menu will-translate-navbar"><a href="#gallery">Galeri</a></li>
-            <li class="nav menu will-translate-navbar"><a href="#location">Lokasi</a></li>
-            <li class="nav menu will-translate-navbar"><a href="#contact-us">Kontak Kami</a></li>
+            <li class="nav menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
+            <li class="nav menu will-translate-navbar"><a class="about-us active" href="#about-us">Tentang Kami</a></li>
+            <li class="nav menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
+            <li class="nav menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
+            <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
           </ul>
         </div>
         <div class="kanan">
@@ -302,19 +303,37 @@
                   <img class="pin pin-img-2" src="assets/svg/pin-2.svg" alt="">
                 </a>
                 <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795?scene=61669682939f9760a9416594"target="blank">
-                <img class="pin pin-img-3" src="assets/svg/pin-3.svg" alt="">
+                  <img class="pin pin-img-3" src="assets/svg/pin-3.svg" alt="">
                 </a>
                 <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795?scene=616694d21962ca4cdf410623"target="blank">
                   <img class="pin pin-img-4" src="assets/svg/pin-4.svg" alt="">
                 </a>
               </div>
               <div class="view-content">
+                <span class="note">" Mari kita ikuti tombol jingga "</span>
                 <ul>
-                  <li class="pin-1">pin satu</li>
-                  <li class="pin-2">pin dua</li>
-                  <li class="pin-3">pin tiga</li>
-                  <li class="pin-4">pin empat</li>
+                  <li class="pinned"> 
+                    <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795" target="blank">
+                      <img src="assets/svg/pin-1.svg">Plang Desa Dampingan
+                    </a>
+                  </li>
+                  <li class="pinned">
+                    <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795?scene=61669658739f857e10367484" target="blank">
+                      <img src="assets/svg/pin-2.svg">Pertigaan Menuju Desa Langahan
+                    </a>
+                  </li>
+                  <li class="pinned">
+                    <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795?scene=61669682939f9760a9416594"target="blank">
+                      <img src="assets/svg/pin-3.svg">Pertigaan Desa Langahan
+                    </a>
+                  </li>
+                  <li class="pinned">
+                    <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795?scene=616694d21962ca4cdf410623"target="blank">
+                      <img src="assets/svg/pin-4.svg">5000m Menuju Pelisan Waterfall
+                    </a>
+                  </li>
                 </ul>
+
               </div>
             </div>
           </div>
@@ -404,7 +423,7 @@
     <!-- End Section Tourist Review -->
 
     <!-- Start Section Footer -->
-    <footer class="footer" id="footer">
+    <section class="footer" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-3 text-center">
@@ -444,7 +463,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </section>
     <!-- End Section Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -455,6 +474,7 @@
     <script src="/js/slideshow.js"></script>
     <script src="/js/api.js"></script>
     <script src="/js/translate.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
 

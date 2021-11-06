@@ -125,6 +125,100 @@ function ep5(){
     return x;
 }
 
+function next(){
+    // var check = "nxt";
+    if(x==4){
+        x=-1;
+    }
+    if(x == -1){
+        $("#ep2").css("background-color", "#C4C4C4");
+        $("#ep3").css("background-color", "#C4C4C4");
+        $("#ep4").css("background-color", "#C4C4C4");
+        $("#ep5").css("background-color", "#C4C4C4");
+        $("#ep1").css("background-color", "#000000");
+    }
+    else if(x == 0){
+        $("#ep1").css("background-color", "#C4C4C4");
+        $("#ep2").css("background-color", "#000000");
+        $("#ep3").css("background-color", "#C4C4C4");
+        $("#ep4").css("background-color", "#C4C4C4");
+        $("#ep5").css("background-color", "#C4C4C4");
+    }
+    else if(x == 1){
+        $("#ep2").css("background-color", "#C4C4C4");
+        $("#ep3").css("background-color", "#000000");
+        $("#ep4").css("background-color", "#C4C4C4");
+        $("#ep5").css("background-color", "#C4C4C4");
+        $("#ep1").css("background-color", "#C4C4C4");
+    }
+    else if(x == 2){
+        $("#ep3").css("background-color", "#C4C4C4");
+        $("#ep4").css("background-color", "#000000");
+        $("#ep5").css("background-color", "#C4C4C4");
+        $("#ep1").css("background-color", "#C4C4C4");
+        $("#ep2").css("background-color", "#C4C4C4");
+    }
+    else if(x == 3){
+        $("#ep4").css("background-color", "#C4C4C4");
+        $("#ep5").css("background-color", "#000000");
+        $("#ep1").css("background-color", "#C4C4C4");
+        $("#ep2").css("background-color", "#C4C4C4");
+        $("#ep3").css("background-color", "#C4C4C4");
+        $("#ep4").css("background-color", "#C4C4C4");
+    }
+    x++;
+    console.log(x);
+    return x;
+}
+
+function prev(){
+    var check = "prv";
+
+    // x=3
+    if(x==0){
+        x=5;
+    }
+    if(x == 1){
+        $("#ep2").css("background-color", "#C4C4C4");
+        $("#ep3").css("background-color", "#C4C4C4");
+        $("#ep4").css("background-color", "#C4C4C4");
+        $("#ep5").css("background-color", "#C4C4C4");
+        $("#ep1").css("background-color", "#000000");
+    }
+    else if(x == 2){
+        $("#ep1").css("background-color", "#C4C4C4");
+        $("#ep2").css("background-color", "#000000");
+        $("#ep3").css("background-color", "#C4C4C4");
+        $("#ep4").css("background-color", "#C4C4C4");
+        $("#ep5").css("background-color", "#C4C4C4");
+    }
+    else if(x == 3){
+        $("#ep2").css("background-color", "#C4C4C4");
+        $("#ep3").css("background-color", "#000000");
+        $("#ep4").css("background-color", "#C4C4C4");
+        $("#ep5").css("background-color", "#C4C4C4");
+        $("#ep1").css("background-color", "#C4C4C4");
+    }
+    else if(x == 4){
+        $("#ep3").css("background-color", "#C4C4C4");
+        $("#ep4").css("background-color", "#000000");
+        $("#ep5").css("background-color", "#C4C4C4");
+        $("#ep1").css("background-color", "#C4C4C4");
+        $("#ep2").css("background-color", "#C4C4C4");
+    }
+    else if(x == 5){
+        $("#ep4").css("background-color", "#C4C4C4");
+        $("#ep5").css("background-color", "#000000");
+        $("#ep1").css("background-color", "#C4C4C4");
+        $("#ep2").css("background-color", "#C4C4C4");
+        $("#ep3").css("background-color", "#C4C4C4");
+        $("#ep4").css("background-color", "#C4C4C4");
+    }
+    --x;
+    console.log(x);
+    return x;
+}
+
 $("#right-arrow").click(function() {
     // alert("Image clicked");
     console.log(x);
@@ -157,7 +251,9 @@ function list(){
         // document.getElementById("video1").innerHTML = videoArray[0];
         // document.getElementById("videomain").innerHTML = videoArray[1];
         // document.getElementById("video3").innerHTML = videoArray[2];
-        x=x+1;
+        // x=x+1;
+        // x=x+1;
+
         
     }else if(x == 1){
         $('#kiri').fadeOut("slow", function(){
@@ -180,7 +276,7 @@ function list(){
             $("#textTitle").replaceWith(text);
             $('#textTitle').fadeIn("slow");
         });
-        x=x+1;
+        // x=x+1;
     
     }else if(x == 2){
         $('#kiri').fadeOut("slow", function(){
@@ -203,7 +299,7 @@ function list(){
             $("#textTitle").replaceWith(text);
             $('#textTitle').fadeIn("slow");
         });
-        x=x+1;
+        // x=x+1;
     }else if(x == 3){
         $('#kiri').fadeOut("slow", function(){
             var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/series/ep3fix.jpg">').hide();
@@ -226,7 +322,7 @@ function list(){
             $('#textTitle').fadeIn("slow");
         });
         // x =0;
-        x=x+1;
+        // x=x+1;
     }
     else if(x == 4){
         $('#kiri').fadeOut("slow", function(){
@@ -249,7 +345,7 @@ function list(){
             $("#textTitle").replaceWith(text);
             $('#textTitle').fadeIn("slow");
         });
-        x =0;
+        // x =0;
         // x++;
         
     }

@@ -848,10 +848,32 @@ Large	            lg	    ≥992px
 Extra large	        xl	    ≥1200px
 Extra extra large	xxl	    ≥1400px
 */
+@media only screen and (max-width:1400px) {
+    #landing h1{
+        font-size: 3em;
+    }
+    .carousel-text .carousel-button button {
+        font-size: 1em;
+    }
+    .carousel-text p {
+        font-size: 1.1em;
+        line-height: 1.8em;
+    }
+}
 
 @media only screen and (max-width:1200px) {
     .carousel-text p {
         padding-right: 40vw;
+    }
+    #landing h1{
+        font-size: 3em;
+    }
+    .carousel-text .carousel-button button {
+        font-size: 1em;
+    }
+    .carousel-text p {
+        font-size: 1.1em;
+        line-height: 1.8em;
     }
 }
 
@@ -859,13 +881,17 @@ Extra extra large	xxl	    ≥1400px
     /* Responsive Hero Image*/
 
     .carousel-text-content h1 {
-        font-size: 3.5em;
+        font-size: 2.7em;
+    }
+    #landing h1{
+        font-size: 2.7em;
     }
 
     .carousel-text p {
-        font-size: 1.2em;
+        font-size: 1em;
         padding-right: 15em;
     }
+    
 
     .carousel-text .orange-line {
         width: 12em;
@@ -874,7 +900,7 @@ Extra extra large	xxl	    ≥1400px
     .carousel-text .carousel-button button {
         padding: 0.5em 1.3em;
         border-radius: 15px;
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     /* Responsive Fee */
@@ -952,9 +978,12 @@ Extra extra large	xxl	    ≥1400px
     .carousel-text-content h1 {
         font-size: 2.8em;
     }
+    #landing h1{
+        font-size: 2.55em;
+    }
 
     .carousel-text p {
-        font-size: 1em;
+        font-size: 0.94em;
         padding-right: 10em;
     }
 
@@ -965,7 +994,7 @@ Extra extra large	xxl	    ≥1400px
     .carousel-text .carousel-button button {
         padding: 0.4em 1em;
         border-radius: 15px;
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     /* Fee */
@@ -1073,15 +1102,19 @@ Extra extra large	xxl	    ≥1400px
         font-size: 2.3em;
     }
 
+    #landing h1{
+        font-size: 2.3em;
+    }
+
     .carousel-text p {
-        font-size: .9em;
+        font-size: .85em;
         padding-right: 8em;
     }
 
     .carousel-text .carousel-button button {
         padding: .5em 1.5em;
         border-radius: 15px;
-        font-size: 1em;
+        font-size: .9em;
     }
 
     /* Fee */
@@ -1160,7 +1193,9 @@ Extra extra large	xxl	    ≥1400px
     .carousel .carousel-text {
         margin-left: 0px;
     }
-
+    #landing h1{
+        font-size: 2.5em;
+    }
     .carousel .carousel-text-content{
         display: flex;
         flex-wrap: wrap;
@@ -1176,7 +1211,7 @@ Extra extra large	xxl	    ≥1400px
     }
 
     .carousel-text p {
-        font-size: .8em;
+        font-size: 1em;
         padding: 0px 40px;
     }
 

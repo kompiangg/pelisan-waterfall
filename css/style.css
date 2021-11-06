@@ -28,6 +28,10 @@ body {
     border-bottom: 2px solid rgba(239, 130, 1, 0.2);
 }
 
+.sticky{
+    background-color: none;
+}
+
 .navbar .container-fluid{
     align-items: baseline;
     padding: 0;
@@ -644,23 +648,81 @@ background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 
 
 /* Gallery & View 360 */
 
-.view-360 h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3vw;
-    font-weight: bold;
-    color: white;
-    padding-bottom: 3vw;
+.view-360{
+    background-color: #eee;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.view-360 .container {
+    margin: 0;
+    padding: 0;
+}
+.view-360 .wrap{
+    background-color: #fff;
+    border-radius: 0.5vw;
+    box-shadow: 5px 7px 8px #ddd;
+    padding: 2vw;
 }
 
 .view-360 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: white;
+    padding-bottom: .5vw;
+    margin: 0;
     color: black;
 }
 
 .view-360 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 2vw;
-    font-weight: bold;
+    font-size: 1.2vw;
+    font-weight: 500;
     color: #000000;
+}
+
+.view-360 .content {
+    padding-top: 2vw;
+}
+
+.content .image{
+    position: relative;
+}
+
+.content .image .pin{
+    width: 1.6vw;
+    position: absolute;
+}
+
+.content .image .pin-img-1 {
+    top:  39%;
+    left: 10%;
+}
+
+.content .image .pin-img-2 {
+    top: 4%;
+    left: 77.6%;
+}
+
+.content .image .pin-img-3 {
+    top: 24%;
+    left: 57%;
+}
+
+.content .image .pin-img-4 {
+    top: 44.8%;
+    left: 45%;
+}
+
+.row .content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row .content img{
+    width: 20vw;
 }
 
 /* Location */

@@ -302,6 +302,16 @@ option{
 #seriesTitle h1{
     font-size: 2.5vw;
 }
+
+#left-arrow img{
+    width: 80px;
+    height: auto;
+}
+
+#right-arrow img{
+    width: 80px;
+    height: auto;
+}
 /* REVIEW */
 #tourist-review{
     display: flex;justify-content: center;align-items: center;
@@ -1168,6 +1178,31 @@ Extra extra large	xxl	    ≥1400px
         font-size: 3vw;
     }
 
+    /* Series */
+    #right-arrow img,
+    #left-arrow img{
+        width: 50px!important;
+    }
+    #video3{
+        width: 28vw;height: 13.979vw;margin-left: -10.912vw;
+    }
+    
+    #videomain{
+        width: 32vw;height:17.979vw;
+    }
+    
+    #video1{
+        width: 28vw;height: 13.979vw;margin-right: -10.912vw;
+    }
+
+    #series #video{
+        margin-top: 2vw;
+    }
+    
+    #series #seriesButton button{
+        height: 10px;width:7px;border-radius: 100%;margin-left: 10px;
+    }
+    
     /* Responsive The Series */
     .series h2 {
         font-size: 4vw;
@@ -1231,11 +1266,35 @@ Extra extra large	xxl	    ≥1400px
 }
 
 @media only screen and (max-width:420px) {
+    #right-arrow img,
+    #left-arrow img{
+        width: 40px!important;
+    }
+    #video3{
+        width: 28vw;height: 13.979vw;margin-left: -16.912vw;
+    }
+    
+    #videomain{
+        width: 43vw;height:23.979vw;
+    }
+    
+    #video1{
+        width: 28vw;height: 13.979vw;margin-right: -16.912vw;
+    }
+    
+    #series #seriesButton button{
+        height: 8px;width:7px;border-radius: 100%;margin-left: 10px;
+    }
+
+    #seriesTitle h1 {
+        font-size: 3.5vw;
+    }
+
     .carousel .carousel-text {
         margin-left: 0px;
     }
     #landing h1{
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
     .carousel .carousel-text-content{
         display: flex;

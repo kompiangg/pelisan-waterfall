@@ -1141,11 +1141,60 @@ Extra extra large	xxl	    ≥1400px
     }
 
     /* Review */
-
+    #review #right-arrow img,
+    #review #left-arrow img{
+        width: 50px!important;
+    }
     .review h2{
         font-size: 3.8vw;
         padding-bottom: 2vw;
     }
+    #tourist-review{
+        display: flex;justify-content: center;align-items: center;
+    }
+    
+    #review{
+        display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 3vw;;
+    }
+    
+    #review3{
+        width: 18vw;height: 12vw;z-index: -99;
+        margin-left: -5.5vw;
+        text-align: right;background-color: #c4c4c4cc;
+    }
+    
+    #reviewmain{
+        width: 28vw;height:18.5vw;background-color: #C4C4C4;
+    }
+    
+    #review1{
+        width: 18vw;height: 12vw;
+        margin-right: -5.5vw;
+    }
+    #review #reviewButton{
+        margin-top: 3vw;
+    }
+    
+    #review #reviewButton button{
+        height: 15px;width:15px;border-radius: 100%;margin-left: 10px;
+    }
+
+    .review .reviewer-impression, .review .reviewer-name {
+        font-size: 2.85vw;
+    }
+    /* footer */
+    #footer{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-size: 1.5vw;
+        
+    }
+    
+    
 }
 
 @media only screen and (max-width:576px) {
@@ -1262,6 +1311,59 @@ Extra extra large	xxl	    ≥1400px
     .review h2 {
         padding-top: 2vw;
         font-size: 3.8vw;
+    }
+    .review .reviewer-impression, .review .reviewer-name {
+        font-size: 3.2vw;
+    }
+    #review #reviewButton button{
+        height: 10px;width:7px;border-radius: 100%;margin-left: 10px;
+    }
+
+    /* Review */
+    .footer .container {
+        padding-top: 30px;
+        text-align: center!important;
+        padding-bottom: 10px;
+    }
+    
+    .footer p{
+        font-size: 17px;
+    }
+
+    .footer .container .copyright {
+        padding-top: 1.5vw!important;
+    }
+    
+    
+    .footer .unorder-list-of-information a {
+        display: block!important;
+        font-weight: normal;
+    }
+    
+    br.logo-line{
+        width: 5vw;
+        height: 1px;
+        color: #fff;
+    }
+    
+    .footer h6,
+    .footer .follow-us {
+        font-family: 'Tinos', serif;
+        font-size: 20px;
+    }
+    
+    .footer .follow-us {
+        padding-top: 1.5vw;
+    }
+
+    
+    .footer svg {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    
+    img.logo{
+        width: 50vw;
     }
 }
 
@@ -1393,5 +1495,8 @@ Extra extra large	xxl	    ≥1400px
 
     .review h2 {
         font-size: 5vw;
+    }
+    .review .reviewer-impression, .review .reviewer-name {
+        font-size: 3.2vw;
     }
 }

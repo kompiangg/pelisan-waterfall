@@ -80,7 +80,7 @@ li.nav{
     font-weight: 500;
 }
 
-.kiri ul li a:hover, .kiri ul li.active{
+.kiri ul li a:hover, .kiri ul li a.active{
     border-bottom: 2px solid #EF8201;
     background-color: rgba(255, 255, 255, 0.03);
     color: white;
@@ -354,7 +354,7 @@ option{
 
 /* About us */
 
-.about-us{
+#about-us{
     background-image: url(/assets/background/background_aboutus_gallery_pisah_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -684,11 +684,19 @@ option{
 .view-content ul{
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 3vw 0 0 0;
 }
 
 .view-content .pinned{
     padding: .7vw 0;
+    border-bottom: 2px solid #EF8201;
+}
+
+.view-content .pinned a{
+    font-size: 1.1vw;
+    color: #EF8201;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .view-content img{
@@ -698,7 +706,7 @@ option{
 
 /* Location */
 
-.location {
+#location {
     background-image: url(/assets/background/fields-bali-are-photographed-from-drone.jpg);
     background-size: cover;
     /* background-position: center; */

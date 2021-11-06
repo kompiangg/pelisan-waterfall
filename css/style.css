@@ -54,7 +54,7 @@ body {
     font-size: 0.76vw;
 }
 
-ul{
+.kiri ul{
     justify-content: flex-start;
     margin: 0;
     padding: 0 0 0 1.8vw;
@@ -63,25 +63,24 @@ ul{
     /* justify-content: space-between; */
 }
 
-#active{
-    border-bottom: 2px solid #EF8201;
-    background-color: rgba(255, 255, 255, 0.03);
-}
-
 li.nav{
     display: inline;
     text-align: center;
     transition: .4s;
     cursor: pointer;
+    padding: .98vw 0;
 }
 
-li a{
+.kiri ul li a{
     border-bottom: 2px solid rgba(239, 130, 1, 0);
-    padding: 1.14vw .5vw;
+    padding: 1.04vw .5vw;
     transition: .4s;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
 }
 
-li a:hover, .active{
+.kiri ul li a:hover, .kiri ul li a.active{
     border-bottom: 2px solid #EF8201;
     background-color: rgba(255, 255, 255, 0.03);
     color: white;
@@ -109,11 +108,6 @@ option{
     color: #000000;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
 
 .navbar .kanan .langg img {
     height: 1vw;
@@ -308,6 +302,16 @@ a{
 #seriesTitle h1{
     font-size: 2.5vw;
 }
+
+#left-arrow img{
+    width: 80px;
+    height: auto;
+}
+
+#right-arrow img{
+    width: 80px;
+    height: auto;
+}
 /* REVIEW */
 #tourist-review{
     display: flex;justify-content: center;align-items: center;
@@ -350,7 +354,7 @@ a{
 
 /* About us */
 
-.about-us{
+#about-us{
     background-image: url(/assets/background/background_aboutus_gallery_pisah_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -431,7 +435,7 @@ a{
 
 /* Gallery */
 
-.gallery {
+#gallery {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,7 +574,7 @@ a{
 
 .view-360{
     background-color: #eee;
-    padding: 1.5vw;
+    padding: 6vw 1.5vw;
     display: flex;
     justify-content: center;
 }
@@ -604,7 +608,7 @@ a{
 }
 
 .view-360 .content {
-    padding-top: 2vw;
+    padding: 2vw 0;
 }
 
 .content .image{
@@ -614,6 +618,11 @@ a{
 .content .image .pin{
     width: 1.6vw;
     position: absolute;
+    transition: .3s;
+}
+
+.content .image .pin:hover {
+    width: 2vw;
 }
 
 .content .image .pin-img-1 {
@@ -621,14 +630,29 @@ a{
     left: 10%;
 }
 
+.content .image .pin-img-1:hover {
+    top: 37%;
+    left: 9%;
+}
+
 .content .image .pin-img-2 {
-    top: 4%;
+    top: 2.5%;
     left: 77.6%;
 }
 
-.content .image .pin-img-3 {
+.content .image .pin-img-2:hover {
+    top: .5%;
+    left: 76.6%;
+}
+
+.content .image .pin-img-3{
     top: 24%;
     left: 57%;
+}
+
+.content .image .pin-img-3:hover{
+    top: 22%;
+    left: 56%;
 }
 
 .content .image .pin-img-4 {
@@ -636,18 +660,53 @@ a{
     left: 45%;
 }
 
+.content .image .pin-img-4:hover{
+    top: 42.8%;
+    left: 44%;
+}
+
 .row .content{
     display: flex;
     justify-content: space-evenly;
 }
 
-.row .content img{
-    width: 20vw;
+.row .content img.main{
+    width: 18vw;
+}
+
+.content .view-content .note{
+    color: #EF8201;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.view-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 3vw 0 0 0;
+}
+
+.view-content .pinned{
+    padding: .7vw 0;
+    border-bottom: 2px solid #EF8201;
+}
+
+.view-content .pinned a{
+    font-size: 1.1vw;
+    color: #EF8201;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.view-content img{
+    width: 1.7vw;
+    margin-right: .7vw;
 }
 
 /* Location */
 
-.location {
+#location {
     background-image: url(/assets/background/fields-bali-are-photographed-from-drone.jpg);
     background-size: cover;
     /* background-position: center; */
@@ -769,7 +828,7 @@ a{
 
 /* Footer */
 
-.footer{
+#footer{
     /* margin-top: 10px; */
     /* height: 270px; */
     background-color: black;
@@ -848,10 +907,32 @@ Large	            lg	    ≥992px
 Extra large	        xl	    ≥1200px
 Extra extra large	xxl	    ≥1400px
 */
+@media only screen and (max-width:1400px) {
+    #landing h1{
+        font-size: 3em;
+    }
+    .carousel-text .carousel-button button {
+        font-size: 1em;
+    }
+    .carousel-text p {
+        font-size: 1.1em;
+        line-height: 1.8em;
+    }
+}
 
 @media only screen and (max-width:1200px) {
     .carousel-text p {
         padding-right: 40vw;
+    }
+    #landing h1{
+        font-size: 3em;
+    }
+    .carousel-text .carousel-button button {
+        font-size: 1em;
+    }
+    .carousel-text p {
+        font-size: 1.1em;
+        line-height: 1.8em;
     }
 }
 
@@ -859,13 +940,17 @@ Extra extra large	xxl	    ≥1400px
     /* Responsive Hero Image*/
 
     .carousel-text-content h1 {
-        font-size: 3.5em;
+        font-size: 2.7em;
+    }
+    #landing h1{
+        font-size: 2.7em;
     }
 
     .carousel-text p {
-        font-size: 1.2em;
+        font-size: 1em;
         padding-right: 15em;
     }
+    
 
     .carousel-text .orange-line {
         width: 12em;
@@ -874,7 +959,7 @@ Extra extra large	xxl	    ≥1400px
     .carousel-text .carousel-button button {
         padding: 0.5em 1.3em;
         border-radius: 15px;
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     /* Responsive Fee */
@@ -896,7 +981,7 @@ Extra extra large	xxl	    ≥1400px
     }
 
     /* Gallery */
-    .gallery {
+    #gallery {
         min-height: 60vh;
         padding-bottom: 2.5vw;
     }
@@ -952,9 +1037,12 @@ Extra extra large	xxl	    ≥1400px
     .carousel-text-content h1 {
         font-size: 2.8em;
     }
+    #landing h1{
+        font-size: 2.55em;
+    }
 
     .carousel-text p {
-        font-size: 1em;
+        font-size: 0.94em;
         padding-right: 10em;
     }
 
@@ -965,7 +1053,7 @@ Extra extra large	xxl	    ≥1400px
     .carousel-text .carousel-button button {
         padding: 0.4em 1em;
         border-radius: 15px;
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     /* Fee */
@@ -1061,11 +1149,60 @@ Extra extra large	xxl	    ≥1400px
     }
 
     /* Review */
-
+    #review #right-arrow img,
+    #review #left-arrow img{
+        width: 50px!important;
+    }
     .review h2{
         font-size: 3.8vw;
         padding-bottom: 2vw;
     }
+    #tourist-review{
+        display: flex;justify-content: center;align-items: center;
+    }
+    
+    #review{
+        display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 3vw;;
+    }
+    
+    #review3{
+        width: 18vw;height: 12vw;z-index: -99;
+        margin-left: -5.5vw;
+        text-align: right;background-color: #c4c4c4cc;
+    }
+    
+    #reviewmain{
+        width: 28vw;height:18.5vw;background-color: #C4C4C4;
+    }
+    
+    #review1{
+        width: 18vw;height: 12vw;
+        margin-right: -5.5vw;
+    }
+    #review #reviewButton{
+        margin-top: 3vw;
+    }
+    
+    #review #reviewButton button{
+        height: 15px;width:15px;border-radius: 100%;margin-left: 10px;
+    }
+
+    .review .reviewer-impression, .review .reviewer-name {
+        font-size: 2.85vw;
+    }
+    /* footer */
+    #footer{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-size: 1.5vw;
+        
+    }
+    
+    
 }
 
 @media only screen and (max-width:576px) {
@@ -1073,15 +1210,19 @@ Extra extra large	xxl	    ≥1400px
         font-size: 2.3em;
     }
 
+    #landing h1{
+        font-size: 2.3em;
+    }
+
     .carousel-text p {
-        font-size: .9em;
+        font-size: .85em;
         padding-right: 8em;
     }
 
     .carousel-text .carousel-button button {
         padding: .5em 1.5em;
         border-radius: 15px;
-        font-size: 1em;
+        font-size: .9em;
     }
 
     /* Fee */
@@ -1094,6 +1235,31 @@ Extra extra large	xxl	    ≥1400px
         font-size: 3vw;
     }
 
+    /* Series */
+    #right-arrow img,
+    #left-arrow img{
+        width: 50px!important;
+    }
+    #video3{
+        width: 28vw;height: 13.979vw;margin-left: -10.912vw;
+    }
+    
+    #videomain{
+        width: 32vw;height:17.979vw;
+    }
+    
+    #video1{
+        width: 28vw;height: 13.979vw;margin-right: -10.912vw;
+    }
+
+    #series #video{
+        margin-top: 2vw;
+    }
+    
+    #series #seriesButton button{
+        height: 10px;width:7px;border-radius: 100%;margin-left: 10px;
+    }
+    
     /* Responsive The Series */
     .series h2 {
         font-size: 4vw;
@@ -1154,13 +1320,92 @@ Extra extra large	xxl	    ≥1400px
         padding-top: 2vw;
         font-size: 3.8vw;
     }
+    .review .reviewer-impression, .review .reviewer-name {
+        font-size: 3.2vw;
+    }
+    #review #reviewButton button{
+        height: 10px;width:7px;border-radius: 100%;margin-left: 10px;
+    }
+
+    /* Review */
+    .footer .container {
+        padding-top: 30px;
+        text-align: center!important;
+        padding-bottom: 10px;
+    }
+    
+    .footer p{
+        font-size: 17px;
+    }
+
+    .footer .container .copyright {
+        padding-top: 1.5vw!important;
+    }
+    
+    
+    .footer .unorder-list-of-information a {
+        display: block!important;
+        font-weight: normal;
+    }
+    
+    br.logo-line{
+        width: 5vw;
+        height: 1px;
+        color: #fff;
+    }
+    
+    .footer h6,
+    .footer .follow-us {
+        font-family: 'Tinos', serif;
+        font-size: 20px;
+    }
+    
+    .footer .follow-us {
+        padding-top: 1.5vw;
+    }
+
+    
+    .footer svg {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    
+    img.logo{
+        width: 50vw;
+    }
 }
 
 @media only screen and (max-width:420px) {
+    #right-arrow img,
+    #left-arrow img{
+        width: 40px!important;
+    }
+    #video3{
+        width: 28vw;height: 13.979vw;margin-left: -16.912vw;
+    }
+    
+    #videomain{
+        width: 43vw;height:23.979vw;
+    }
+    
+    #video1{
+        width: 28vw;height: 13.979vw;margin-right: -16.912vw;
+    }
+    
+    #series #seriesButton button{
+        height: 8px;width:7px;border-radius: 100%;margin-left: 10px;
+    }
+
+    #seriesTitle h1 {
+        font-size: 3.5vw;
+    }
+
     .carousel .carousel-text {
         margin-left: 0px;
     }
-
+    #landing h1{
+        font-size: 2.3em;
+    }
     .carousel .carousel-text-content{
         display: flex;
         flex-wrap: wrap;
@@ -1176,7 +1421,7 @@ Extra extra large	xxl	    ≥1400px
     }
 
     .carousel-text p {
-        font-size: .8em;
+        font-size: 1em;
         padding: 0px 40px;
     }
 
@@ -1258,5 +1503,8 @@ Extra extra large	xxl	    ≥1400px
 
     .review h2 {
         font-size: 5vw;
+    }
+    .review .reviewer-impression, .review .reviewer-name {
+        font-size: 3.2vw;
     }
 }

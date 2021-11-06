@@ -54,7 +54,7 @@ body {
     font-size: 0.76vw;
 }
 
-ul{
+.kiri ul{
     justify-content: flex-start;
     margin: 0;
     padding: 0 0 0 1.8vw;
@@ -63,25 +63,24 @@ ul{
     /* justify-content: space-between; */
 }
 
-#active{
-    border-bottom: 2px solid #EF8201;
-    background-color: rgba(255, 255, 255, 0.03);
-}
-
 li.nav{
     display: inline;
     text-align: center;
     transition: .4s;
     cursor: pointer;
+    padding: .98vw 0;
 }
 
-li a{
+.kiri ul li a{
     border-bottom: 2px solid rgba(239, 130, 1, 0);
-    padding: 1.14vw .5vw;
+    padding: 1.04vw .5vw;
     transition: .4s;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
 }
 
-li a:hover, .active{
+.kiri ul li a:hover, .kiri ul li.active{
     border-bottom: 2px solid #EF8201;
     background-color: rgba(255, 255, 255, 0.03);
     color: white;
@@ -109,11 +108,6 @@ option{
     color: #000000;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
 
 .navbar .kanan .langg img {
     height: 1vw;
@@ -431,7 +425,7 @@ a{
 
 /* Gallery */
 
-.gallery {
+#gallery {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,7 +564,7 @@ a{
 
 .view-360{
     background-color: #eee;
-    padding: 1.5vw;
+    padding: 6vw 1.5vw;
     display: flex;
     justify-content: center;
 }
@@ -604,7 +598,7 @@ a{
 }
 
 .view-360 .content {
-    padding-top: 2vw;
+    padding: 2vw 0;
 }
 
 .content .image{
@@ -614,6 +608,11 @@ a{
 .content .image .pin{
     width: 1.6vw;
     position: absolute;
+    transition: .3s;
+}
+
+.content .image .pin:hover {
+    width: 2vw;
 }
 
 .content .image .pin-img-1 {
@@ -621,14 +620,29 @@ a{
     left: 10%;
 }
 
+.content .image .pin-img-1:hover {
+    top: 37%;
+    left: 9%;
+}
+
 .content .image .pin-img-2 {
-    top: 4%;
+    top: 2.5%;
     left: 77.6%;
 }
 
-.content .image .pin-img-3 {
+.content .image .pin-img-2:hover {
+    top: .5%;
+    left: 76.6%;
+}
+
+.content .image .pin-img-3{
     top: 24%;
     left: 57%;
+}
+
+.content .image .pin-img-3:hover{
+    top: 22%;
+    left: 56%;
 }
 
 .content .image .pin-img-4 {
@@ -636,13 +650,40 @@ a{
     left: 45%;
 }
 
+.content .image .pin-img-4:hover{
+    top: 42.8%;
+    left: 44%;
+}
+
 .row .content{
     display: flex;
     justify-content: space-evenly;
 }
 
-.row .content img{
-    width: 20vw;
+.row .content img.main{
+    width: 18vw;
+}
+
+.content .view-content .note{
+    color: #EF8201;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.view-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.view-content .pinned{
+    padding: .7vw 0;
+}
+
+.view-content img{
+    width: 1.7vw;
+    margin-right: .7vw;
 }
 
 /* Location */
@@ -769,7 +810,7 @@ a{
 
 /* Footer */
 
-.footer{
+#footer{
     /* margin-top: 10px; */
     /* height: 270px; */
     background-color: black;
@@ -922,7 +963,7 @@ Extra extra large	xxl	    ≥1400px
     }
 
     /* Gallery */
-    .gallery {
+    #gallery {
         min-height: 60vh;
         padding-bottom: 2.5vw;
     }

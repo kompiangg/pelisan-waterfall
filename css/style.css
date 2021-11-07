@@ -835,7 +835,7 @@ option{
     /* height: 270px; */
     background-color: black;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     /* transition: 0.2s ; */
 }
 
@@ -854,10 +854,22 @@ option{
 
 .footer p {
     margin-bottom: 0.2vw;
+    text-decoration: none;
+    color: white;
 }
 
 .footer a{
     margin-bottom: 0.2vw;
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+    color: #EF8201;
+    text-decoration-color: #EF8201;
 }
 
 .footer .unorder-list-of-information a {
@@ -910,6 +922,18 @@ Extra large	        xl	    ≥1200px
 Extra extra large	xxl	    ≥1400px
 */
 @media only screen and (max-width:1400px) {
+    .navbar{
+        height: 6.5vw;
+    }
+
+    .navbar .menu{
+        font-size: 1.6vw;
+    }
+
+    .kiri ul li a{
+        padding: 2.1vw 2vw;
+    }
+
     #landing h1{
         font-size: 3em;
     }

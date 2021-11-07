@@ -16,7 +16,6 @@ body {
 
 .navbar{
     width: 100%;
-    height: 3.3vw;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     position: fixed;
@@ -33,6 +32,7 @@ body {
 }
 
 .navbar .container-fluid{
+    display: flex;
     align-items: center;
     padding: 0;
     padding-bottom: 0px;
@@ -44,14 +44,19 @@ body {
 }
 
 .kiri a img{
-    width: 12vw;
+    width: 200px;
+    margin: 13px 0;
     outline: none;
     padding-right: 1.8vw;
     border-right: .1vw solid bisque;
 }
 
+.nav{
+    display: none;
+}
+
 .menu{
-    font-size: 0.76vw;
+    font-size: 15px;
 }
 
 .kiri ul{
@@ -63,17 +68,9 @@ body {
     /* justify-content: space-between; */
 }
 
-li.nav{
-    display: inline;
-    text-align: center;
-    transition: .4s;
-    cursor: pointer;
-    padding: .98vw 0;
-}
-
 .kiri ul li a{
     border-bottom: 2px solid rgba(239, 130, 1, 0);
-    padding: 1.04vw .5vw;
+    padding: 16px 15px;
     transition: .4s;
     text-decoration: none;
     color: white;
@@ -88,7 +85,7 @@ li.nav{
 
 .kanan a svg{
     color: white;
-    margin-left: 1vw;
+    margin-left: 20px;
     display: none;
 }
 
@@ -928,17 +925,6 @@ Extra large	        xl	    ≥1200px
 Extra extra large	xxl	    ≥1400px
 */
 @media only screen and (max-width:1400px) {
-    .navbar{
-        height: 6.5vw;
-    }
-
-    .navbar .menu{
-        font-size: 1.6vw;
-    }
-
-    .kiri ul li a{
-        padding: 2.1vw 2vw;
-    }
 
     #landing h1{
         font-size: 3em;
@@ -1066,6 +1052,50 @@ Extra extra large	xxl	    ≥1400px
 }
 
 @media only screen and (max-width:768px) {
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container-fluid{
+        margin: 20px 30px!important;
+    }
+    
+    .container-fluid .kiri ul{
+        display: none;
+    }
+
+    .navbar .nav .responsive{
+        position: relative;
+    }
+
+    .navbar ul#nav{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .navbar .responsive a{
+        color: #fff;
+        float: none;
+        display: block;
+        text-decoration: none;
+        padding: 15px 50px;
+        border-top: 2px solid rgba(239, 130, 1, 0.2);
+    }
+
+    a.logo img{
+        border: none;
+        width: 200px;
+    }
+    #id{
+        font-size: .9em;
+    }
+
+    .kanan a svg.bi{
+        display: flex;
+    }
+
     .carousel-text-content h1 {
         font-size: 2.8em;
     }
@@ -1238,6 +1268,12 @@ Extra extra large	xxl	    ≥1400px
 }
 
 @media only screen and (max-width:576px) {
+
+    a.logo img{
+        border: none;
+        width: 170px;
+    }
+
     .carousel-text-content h1 {
         font-size: 2.3em;
     }
@@ -1408,6 +1444,15 @@ Extra extra large	xxl	    ≥1400px
 }
 
 @media only screen and (max-width:420px) {
+    .container-fluid{
+        margin: 0 30px!important;
+    }
+    
+    a.logo img{
+        border: none;
+        width: 150px;
+    }
+
     #right-arrow img,
     #left-arrow img{
         width: 40px!important;
@@ -1502,7 +1547,7 @@ Extra extra large	xxl	    ≥1400px
     }
 
     /* Gallery */
-    .gallery {
+    #gallery {
         min-height: 50vh;
     }
 

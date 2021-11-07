@@ -28,10 +28,10 @@
         <div class="kiri">  
           <a href="#landing" class="logo"><img src="assets/logo/logo.svg" alt="Logo Langgahan"></a>
           <ul>
-            <li class="nav menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
-            <li class="nav menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
-            <li class="nav menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
-            <li class="nav menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
+            <li class="menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
+            <li class="menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
+            <li class="menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
+            <li class="menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
             <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
           </ul>
         </div>
@@ -42,13 +42,20 @@
               <option value="ENG">ENG</option>
             </div>
           </select>
-          <a href="javascript:void(0)" class="icon" onclick="myFunction()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <a href="javascript:void(0)" class="icon" onClick="justOneFunction()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
           </a>
         </div>
       </div>
+      <ul class="nav" id="nav">
+        <li class="menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
+        <li class="menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
+        <li class="menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
+        <li class="menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
+        <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+      </ul>
     </nav>
     <!-- End Navbar -->
 
@@ -487,6 +494,17 @@
     <script src="/js/api.js"></script>
     <script src="/js/translate.js"></script>
     <script src="js/navbar.js"></script>
+    <script>
+      function justOneFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "nav") {
+          x.className = "responsive";
+          console.log("help makk");
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
   </body>
 </html>
 

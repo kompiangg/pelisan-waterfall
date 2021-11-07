@@ -471,6 +471,7 @@ option{
   /* Next & previous buttons */
 .prev,
 .next {
+    text-decoration: none!important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -497,6 +498,7 @@ option{
 
 .prev:hover,
 .next:hover {
+    text-decoration: none!important;
     top: 35%;
     display: flex;
     justify-content: center;
@@ -646,7 +648,7 @@ option{
 }
 
 .content .image .pin-img-3{
-    top: 24%;
+    top: 23%;
     left: 57%;
 }
 
@@ -729,7 +731,7 @@ option{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     color: white;
     text-align: left;
 }
@@ -756,7 +758,7 @@ option{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
 }
 
 .location button:hover {
@@ -934,6 +936,19 @@ Extra extra large	xxl	    ≥1400px
         font-size: 1.1em;
         line-height: 1.8em;
     }
+    /* 360 View */
+
+    .row .content img.main {
+        width: 30vw;
+    }
+
+    .view-content .pinned a {
+        font-size: 1.6vw;
+    }
+
+    .contain .image .pin {
+        width: 3.8vw;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -1030,6 +1045,28 @@ Extra extra large	xxl	    ≥1400px
     .review h2 {
         font-size: 3vw;
         padding-bottom: 2vw;
+    }
+
+    /* 360 View */
+    .view-360 h2 {
+        font-size: 3vw;
+        padding-bottom: 1vw;
+    }
+
+    .view-360 p {
+        font-size: 1.7vw;
+    }
+
+    .row .content img.main {
+        width: 28vw;
+    }
+
+    .view-content .pinned a {
+        font-size: 1.6vw;
+    }
+    
+    .content .image .pin {
+        width: 2.2vw;
     }
 }
 
@@ -1148,6 +1185,11 @@ Extra extra large	xxl	    ≥1400px
         font-size: 2vw;
     }
 
+    /* 360 */
+    .content .image .pin {
+        width: 2.5vw;
+    }
+
     /* Review */
     #review #right-arrow img,
     #review #left-arrow img{
@@ -1202,7 +1244,7 @@ Extra extra large	xxl	    ≥1400px
         
     }
     
-    
+
 }
 
 @media only screen and (max-width:576px) {
@@ -1313,6 +1355,24 @@ Extra extra large	xxl	    ≥1400px
         padding: 1vw 1.8vw;
         border-radius: 8px;
         font-size: 2vw;
+    }
+
+    /* View 360 */
+    .row .content img.main {
+        width: 36vw;
+    }
+
+    .view-content .pinned a {
+        font-size: 1.8vw;
+    }
+    
+    .view-360 p {
+        font-size: 2vw;
+        padding-top: 2vw;
+    }
+
+    .content .image .pin {
+        width: 3vw;
     }
 
     /* Review */

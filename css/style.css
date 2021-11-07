@@ -33,7 +33,7 @@ body {
 }
 
 .navbar .container-fluid{
-    align-items: baseline;
+    align-items: center;
     padding: 0;
     padding-bottom: 0px;
     margin: 0 3em;
@@ -86,7 +86,14 @@ li.nav{
     color: white;
 }
 
+.kanan a svg{
+    color: white;
+    margin-left: 1vw;
+    display: none;
+}
+
 #id{
+    font-family: 'Poppins', sans-serif;
     padding-right: 1px;
     display: flex;
     justify-content: right;
@@ -106,11 +113,12 @@ option{
 .select-items{
     background: none;
     color: #000000;
+    font-size: .76vw;
 }
 
-
-.navbar .kanan .langg img {
-    height: 1vw;
+.navbar .kanan{
+    display: flex;
+    align-items: center;
 }
 
 /* Landing */

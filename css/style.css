@@ -926,6 +926,34 @@ img.logo{
 
 
 
+/* Tab-Gallery */
+.item{
+    transition: .4s;
+}
+.item img{
+    border-radius: 2px;
+}
+.item:hover{
+    filter: brightness(80%);
+}
+.wrap4gallery{
+    display: flex;
+    justify-content: center;
+}
+.gallery-header h3{
+    width: 100%;
+    font-size: 2.5vw;
+    padding: 13px 30px;
+    font-weight: bolder;
+    border-bottom: 2px solid #EF8201;
+    color: #EF8201;
+}
+.gallery-header h3 span{
+    font-weight: 100;
+}
+
+
+
 /* Responsive Section */
 
 /* 

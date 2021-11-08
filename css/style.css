@@ -147,7 +147,7 @@ option{
 .carousel-text{
     display: flex;
     align-items: center;
-    margin-left: 7vw;
+    margin-left: 8vw;
     height: 100%;
     z-index: 10;
 }
@@ -206,7 +206,7 @@ option{
 /* Fee */
 
 .fee{
-    background: url('../assets/hero_images/fee_hd.png') no-repeat;
+    background: url('../assets/background/fee.png') no-repeat;
     background-size:cover;
     text-align: center;
 }
@@ -318,7 +318,7 @@ option{
 }
 
 #review{
-    display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 3vw;;
+    display: flex;align-content: center;justify-content: center;align-items: center;margin-top: 0vw;;
 }
 
 #review3{
@@ -691,14 +691,14 @@ option{
 
 .view-content .pinned{
     padding: .7vw 0;
-    border-bottom: 2px solid #EF8201;
 }
 
 .view-content .pinned a{
     font-size: 1.1vw;
     color: #EF8201;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 .view-content img{
@@ -715,7 +715,7 @@ option{
 }
 
 .location iframe {
-    width: 30vw;
+    width: 32vw;
     height: 20vw;
 }
 
@@ -742,17 +742,17 @@ option{
 }
 
 .location .container {
-    padding-bottom: 50px;
+    padding-bottom: 5vw;
 }
 
 .location button {
-    background: radial-gradient(194.09% 244.49% at 41.7% -66.6%, rgba(255, 255, 255, 0.73) 0%, rgba(255, 255, 255, 0.05) 100%);
+    background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(239, 130, 1, 0.77) 0%, rgba(239, 130, 1, 0.05) 100%);
     backdrop-filter: blur(5px);
     padding: .8vw 1.8vw;
     border: 0px;
     /* Note: backdrop-filter has minimal browser support */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
+    border-radius: 14px;
 
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -762,7 +762,7 @@ option{
 }
 
 .location button:hover {
-    background: radial-gradient(194.09% 244.49% at 41.7% -66.6%, rgba(196, 196, 196, 0.73) 0%, rgba(255, 255, 255, 0.05) 100%);
+    background: radial-gradient(296.49% 312.91% at 30.24% -0.18%, rgba(173, 95, 0, 0.77) 0%, rgba(239, 130, 1, 0.05) 100%);
 }
 
 .location .bi-pin-map-fill {
@@ -778,6 +778,7 @@ option{
     font-weight: bold;
     font-size: 3vw;
     color: #000000;
+    padding-bottom: 4vw;
 }
 
 .review .reviewer-impression,
@@ -830,36 +831,38 @@ option{
 
 /* Footer */
 
-#footer{
-    /* margin-top: 10px; */
-    /* height: 270px; */
-    background-color: black;
-    color: white;
-    font-size: 1.2vw;
-    /* transition: 0.2s ; */
+.footer p {
+    margin-bottom: 0px;
 }
 
-.footer .container {
-    padding-top: 30px;
+#footer{
+    background-color: black;
+    color: white;
+}
+
+.footer .container .footer-content{
     padding-bottom: 10px;
 }
 
 .footer .container .copyright {
-    padding-top: 1.5vw!important;
+    border-top: 1px solid rgba(196, 196, 196, 0.73);
+    padding-top: 10px!important;
 }
 
 .footer .container {
     text-align: left;
+    padding-bottom: 0px;
 }
 
-.footer p {
-    margin-bottom: 0.2vw;
+.footer .container .copyright p {
+    font-size: 13px;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.563);
+    padding-bottom: 10px;
 }
 
 .footer a{
-    margin-bottom: 0.2vw;
+    /* margin-bottom: 0.2vw; */
     text-decoration: underline;
     text-decoration-color: white;
     color: white;
@@ -886,7 +889,6 @@ br.logo-line{
 .footer h6,
 .footer .follow-us {
     font-family: 'Tinos', serif;
-    font-size: 21px;
 }
 
 .footer .follow-us {
@@ -901,13 +903,23 @@ br.logo-line{
 }
 
 .footer svg {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 25px;
+    height: 25px;
+}
+
+.footer .container-footer-content {
+    padding-bottom: 1rem;
+}
+
+.footer h6 {
+    font-size: 1.2rem;
 }
 
 img.logo{
     width: 13vw;
 }
+
+
 
 /* Responsive Section */
 
@@ -921,6 +933,33 @@ Large	            lg	    ≥992px
 Extra large	        xl	    ≥1200px
 Extra extra large	xxl	    ≥1400px
 */
+@media only screen and (min-width:1900px) {
+    .melukad img {
+        max-height: 480px;
+    }
+
+    .location iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    img.logo {
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-width:1900px) {
+    .melukad img {
+        max-height: 30vw;
+    }
+}
+
+@media only screen and (max-width:1900px) {
+    .melukad img {
+        max-height: 25vw;
+    }
+}
+
 @media only screen and (max-width:1400px) {
     .navbar{
         height: 6.5vw;
@@ -943,6 +982,10 @@ Extra extra large	xxl	    ≥1400px
     .carousel-text p {
         font-size: 1.1em;
         line-height: 1.8em;
+    }
+
+    .melukad img {
+        max-height: 25vw;
     }
 }
 
@@ -971,7 +1014,7 @@ Extra extra large	xxl	    ≥1400px
     }
 
     .contain .image .pin {
-        width: 3.8vw;
+        width: 2.6vw!important;
     }
 }
 
@@ -1092,9 +1135,13 @@ Extra extra large	xxl	    ≥1400px
     .content .image .pin {
         width: 2.2vw;
     }
+
+    .footer p, .footer a{
+        font-size: 0.9rem;
+    }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
     .carousel-text-content h1 {
         font-size: 2.8em;
     }
@@ -1209,6 +1256,11 @@ Extra extra large	xxl	    ≥1400px
         font-size: 2vw;
     }
 
+    .location iframe {
+        width:50vw;
+        height: 30vw;
+    }
+
     /* 360 */
     .content .image .pin {
         width: 2.5vw;
@@ -1267,8 +1319,10 @@ Extra extra large	xxl	    ≥1400px
         font-size: 1.5vw;
         
     }
-    
 
+    .footer p, .footer a{
+        font-size: 0.9rem;
+    }
 }
 
 @media only screen and (max-width:576px) {
@@ -1411,15 +1465,12 @@ Extra extra large	xxl	    ≥1400px
         height: 10px;width:7px;border-radius: 100%;margin-left: 10px;
     }
 
-    /* Review */
     .footer .container {
         padding-top: 30px;
-        text-align: center!important;
-        padding-bottom: 10px;
     }
     
-    .footer p{
-        font-size: 17px;
+    .footer p, .footer a{
+        font-size: 0.8rem;
     }
 
     .footer .container .copyright {

@@ -20,3 +20,22 @@ window.addEventListener('scroll', ()=>{
         }
     })
 })
+
+// max768
+
+
+// max 576
+// a.logo img{
+//     border: none;
+//     width: 170px;
+// }
+
+// max420
+// .container-fluid{
+//     margin: 0 30px!important;
+// }
+
+// a.logo img{
+//     border: none;
+//     width: 150px;
+// }

@@ -27,7 +27,7 @@
     
     <script>
       AOS.init({
-        offset: 55,
+        offset: 60,
         duration: 1300,
         easing: 'ease-in-out-cubic',
         delay: 50,
@@ -41,10 +41,11 @@
         <div class="kiri">  
           <a href="#landing" class="logo"><img src="assets/logo/logo.svg" alt="Logo Langgahan"></a>
           <ul>
-            <li class="nav menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
-            <li class="nav menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
-            <li class="nav menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
-            <li class="nav menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
+            <li class="menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
+            <li class="menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
+            <li class="menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
+            <li class="menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
+            <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
           </ul>
         </div>
         <div class="kanan">
@@ -54,8 +55,20 @@
               <option value="ENG">ENG</option>
             </div>
           </select>
+          <a href="javascript:void(0)" class="icon" onClick="justOneFunction()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
         </div>
       </div>
+      <ul class="nav" id="nav">
+        <li class="menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
+        <li class="menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
+        <li class="menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
+        <li class="menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
+        <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+      </ul>
     </nav>
     <!-- End Navbar -->
 
@@ -73,7 +86,7 @@
             <div alt="Pelisan Waterfall 2" class="carousel-item-3">
           </div>
         </div>
-        <div class="carousel-text" style="position: absolute;" data-aos="fade-right" data-aos-delay="500" data-aos-duration="2000" data-aos-easing="ease-in-out">
+        <div class="carousel-text" style="position: absolute;" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
           <div class="carousel-text-content" lang="en">
             <h1>DISCOVER <br> THE BEAUTY OF  <br> <strong>PELISAN WATERFALL</strong> </h1>
             <div class="orange-line"></div>
@@ -209,11 +222,11 @@
             <div class="container-slideshow" data-aos="fade-up">
               
               <div class="slide-full">
-                <img src="/assets/gallery/landscape/1.jpg" alt="">
-              </div>
-    
-              <div class="slide-full">
                 <img src="/assets/gallery/landscape/12.jpg" alt="">
+              </div>
+              
+              <div class="slide-full">
+                <img src="/assets/gallery/landscape/1.jpg" alt="">
               </div>
     
               <div class="slide-full">
@@ -234,11 +247,11 @@
               <div class="row-gallery">
     
                 <div class="column-gallery">
-                  <img class="demo cursor" src="/assets/gallery/landscape/1_resize.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                  <img class="demo cursor" src="/assets/gallery/landscape/12_resize.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
                 </div>
                 
                 <div class="column-gallery">
-                  <img class="demo cursor" src="/assets/gallery/landscape/12_resize.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+                  <img class="demo cursor" src="/assets/gallery/landscape/1_resize.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
                 </div>
                 
                 <div class="column-gallery">
@@ -468,13 +481,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>-->
-    
-    <script type="text/javascript" src="/js/slideshow.js"></script>
-    <script type="text/javascript" src="/js/translate.js"></script>
-    <script type="text/javascript" src="js/navbar.js"></script>
-
+  
     <!-- For Gmaps API Purpose, the file have ignored in .gitignore file -->
     <script type="text/javascript" src="/js/api.js"></script>
+    
+    <!--  -->
+    <script src="/js/slideshow.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/translate.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+      function justOneFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "nav") {
+          x.className = "responsive";
+          console.log("help makk");
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
   </body>
 </html>
 

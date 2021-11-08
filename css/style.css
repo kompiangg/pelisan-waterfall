@@ -927,15 +927,6 @@ img.logo{
 
 
 /* Tab-Gallery */
-.item{
-    transition: .4s;
-}
-.item img{
-    border-radius: 2px;
-}
-.item:hover{
-    filter: brightness(80%);
-}
 .wrap4gallery{
     display: flex;
     justify-content: center;
@@ -949,7 +940,32 @@ img.logo{
     color: #EF8201;
 }
 .gallery-header h3 span{
-    font-weight: 100;
+    font-weight: 300;
+    color: #868686;
+}
+.container .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .row .column{
+    flex: 25%;
+    height: 100%;
+    padding: 0 6px;
+}
+
+.item{
+    height: auto;
+}
+.item img{
+    margin-top: 12px;
+    height: auto;
+    border-radius: 3px;
+    filter: grayscale(1) brightness(0.7);
+    transition: .3s linear;
+}
+.item img:hover{
+    filter: none;
 }
 
 
@@ -1038,6 +1054,13 @@ Extra extra large	xxl	    ≥1400px
     .contain .image .pin {
         width: 2.6vw!important;
     }
+
+    
+    /* Gallery Tab */
+    .item img{
+        filter: none;
+    }
+
 }
 
 @media only screen and (max-width:992px) {
@@ -1165,53 +1188,53 @@ Extra extra large	xxl	    ≥1400px
     img.logo{
         width: 17vw;
     }
-    
+
 }
 
 @media only screen and (max-width:767px) {
     .navbar{
     background-color: rgba(0, 0, 0, 0.8);
-}
+    }
 
-.container-fluid{
-    margin: 20px 30px!important;
-}
+    .container-fluid{
+        margin: 20px 30px!important;
+    }
 
-.container-fluid .kiri ul{
-    display: none;
-}
+    .container-fluid .kiri ul{
+        display: none;
+    }
 
-.navbar .nav .responsive{
-    position: relative;
-}
+    .navbar .nav .responsive{
+        position: relative;
+    }
 
-.navbar ul#nav{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+    .navbar ul#nav{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
-.navbar .responsive a{
-    color: #fff;
-    float: none;
-    display: block;
-    text-decoration: none;
-    padding: 15px 50px;
-    border-top: 2px solid rgba(239, 130, 1, 0.2);
-}
+    .navbar .responsive a{
+        color: #fff;
+        float: none;
+        display: block;
+        text-decoration: none;
+        padding: 15px 50px;
+        border-top: 2px solid rgba(239, 130, 1, 0.2);
+    }
 
-a.logo img{
-    border: none;
-    width: 200px;
-}
-#id{
-    font-size: .9em;
-}
+    a.logo img{
+        border: none;
+        width: 200px;
+    }
+    #id{
+        font-size: .9em;
+    }
 
-.kanan a svg.bi{
-    display: flex;
-}
+    .kanan a svg.bi{
+        display: flex;
+    }
     .carousel-text-content h1 {
         font-size: 2.8em;
     }
@@ -1397,6 +1420,29 @@ a.logo img{
     img.logo{
         width: 35vw;
     }
+
+    /* Galley Tab */
+    .pad{
+        padding-top: 110px!important;
+    }
+
+    .container .row .column{
+        flex: 50%;
+    }
+
+    .gallery-header h3{
+        width: 100%;
+        font-size: 23px;
+        padding: 13px 30px;
+        font-weight: bolder;
+        border-bottom: 2px solid #EF8201;
+        color: #EF8201;
+    }
+    .gallery-header h3 span{
+        font-weight: 300;
+        color: #868686;
+    }
+
 }
 
 @media only screen and (max-width:576px) {
@@ -1588,6 +1634,30 @@ a.logo img{
     img.logo{
         width: 50vw;
     }
+
+    /* Gallery Tab */
+    .pad{
+        padding-top: 100px!important;
+    }
+    .container .row{
+        margin: 0 10px;
+    }
+    .container .row .column{
+        flex: 100%;
+    }
+    .gallery-header h3{
+        width: 100%;
+        font-size: 23px;
+        padding: 13px 30px;
+        font-weight: bolder;
+        border-bottom: 2px solid #EF8201;
+        color: #EF8201;
+    }
+    .gallery-header h3 span{
+        font-weight: 300;
+        color: #868686;
+    }
+
 }
 
 @media only screen and (max-width:420px) {
@@ -1731,4 +1801,25 @@ a.logo img{
     .review .reviewer-impression, .review .reviewer-name {
         font-size: 3.2vw;
     }
+
+    /* Gallery Tab */
+    .pad{
+        padding-top: 50px!important;
+    }
+    .container .row{
+        margin: 0px;
+    }
+    .gallery-header h3{
+        width: 100%;
+        font-size: 23px;
+        padding: 13px 30px;
+        font-weight: bolder;
+        border-bottom: 2px solid #EF8201;
+        color: #EF8201;
+    }
+    .gallery-header h3 span{
+        font-weight: 300;
+        color: #868686;
+    }
+
 }

@@ -1,10 +1,9 @@
 // console.log("sa");
-var review = [];
+let review = [];
 var nama = [];
 var foto = [];
 var foto2 = [];
 var foto3 = [];
-
 
 review[0] = '<p id="reviewr" class="reviewer-impression">Wisata alam di Bali, air terjun Pelisan di Desa Langgahan yang belum banyak orang tahu.</p>';
 review[1] = '<p id="reviewr" class="reviewer-impression">Air Terjun Pelisan memiliki panorama yang indah, dengan  beberapa pohon jeruk yang bisa ditemui, dan air nya yang jernih.</p>';
@@ -22,7 +21,7 @@ var videoArray = [];
 
 // Crumb Locket
 videoArray[0] = '<iframe id="kiri" width="350" height="200" src="https://www.youtube.com/embed/BqnG_Ei35JE?modestbranding=1&showinfo=0"></iframe>';
-console.log(review[0]);
+// console.log(review[0]);
 
 /* <iframe id="kiri" width="350" height="200" src="https://www.youtube.com/embed/V5YOhcAof8I"></iframe> */
 
@@ -351,64 +350,6 @@ function list(){
         
     }
 }
-
-
-
-
-
-
-// function myFunction(){
-//     // kiri = videoArray[y];
-    
-//     if(x == 0){
-//         document.getElementById("video1").innerHTML = videoArray[0];
-//         document.getElementById("videomain").innerHTML = videoArray[1];
-//         document.getElementById("video3").innerHTML = videoArray[2];
-//         x=x+1;
-//         setTimeout(function(){
-//             container.classList.remove('animation')
-//         },100)
-
-//     }else if(x == 1){
-//         document.getElementById("video1").innerHTML = videoArray[1];
-//         document.getElementById("videomain").innerHTML = videoArray[2];
-//         document.getElementById("video3").innerHTML = videoArray[3];
-//         x=x+1;
-//         setTimeout(function(){
-//             container.classList.remove('animation')
-//         },100)
-
-//     }else if(x == 2){
-//         document.getElementById("video1").innerHTML = videoArray[2];
-//         document.getElementById("videomain").innerHTML = videoArray[3];
-//         document.getElementById("video3").innerHTML = videoArray[0];
-//         x=x+1;
-//         setTimeout(function(){
-//             container.classList.remove('animation')
-//         },100)
-        
-//     }else if(x == 3){
-//         document.getElementById("video1").innerHTML = videoArray[3];
-//         document.getElementById("videomain").innerHTML = videoArray[0];
-//         document.getElementById("video3").innerHTML = videoArray[1];
-//         x =0;
-//         setTimeout(function(){
-//             container.classList.remove('animation')
-//         },100)
-//         // x++;
-        
-//     }
-
-//     console.log(x);
-//     return x;
-// }
-
-// BAGIAN REVIEW
-// BAGIAN REVIEW
-// BAGIAN REVIEW
-// BAGIAN REVIEW
-
-
 
 y = 0;
 

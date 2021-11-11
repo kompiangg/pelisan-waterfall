@@ -14,7 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
@@ -22,28 +24,41 @@
     <title>Pelisan Waterfall</title>
   </head>
   <body>
+
     <!-- Start Navbar Section -->
     <nav class="navbar">
       <div class="container-fluid">
         <div class="kiri">  
           <a href="#landing" class="logo"><img src="assets/logo/logo.svg" alt="Logo Langgahan"></a>
           <ul>
-            <li class="nav menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
-            <li class="nav menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
-            <li class="nav menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
-            <li class="nav menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
+            <li class="menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
+            <li class="menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
+            <li class="menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
+            <li class="menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
             <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
           </ul>
         </div>
         <div class="kanan">
-          <select name="langg" id="id" onChange="updateContent()">
+          <select name="langg" id="id" onChange="updateContent(); updateReview()">
             <div class="select-items">
               <option value="IDN">IDN</option>
               <option value="ENG">ENG</option>
             </div>
           </select>
+          <a href="javascript:void(0)" class="icon" onClick="justOneFunction()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
         </div>
       </div>
+      <ul class="nav" id="nav">
+        <li class="menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
+        <li class="menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
+        <li class="menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
+        <li class="menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
+        <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+      </ul>
     </nav>
     <!-- End Navbar -->
 
@@ -61,7 +76,7 @@
             <div alt="Pelisan Waterfall 2" class="carousel-item-3">
           </div>
         </div>
-        <div class="carousel-text" style="position: absolute;">
+        <div class="carousel-text" style="position: absolute;" data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
           <div class="carousel-text-content" lang="en">
             <h1>DISCOVER <br> THE BEAUTY OF  <br> <strong>PELISAN WATERFALL</strong> </h1>
             <div class="orange-line"></div>
@@ -81,15 +96,15 @@
       <div class="container container-fee">
         <!-- <img src="assets/hero_images/fee_hd.png" alt=""> -->
         <div class="row">
-          <div class="col-12">
+          <div class="col-12" data-aos="fade-up">
             <h2 class="will-translate">Tiket Masuk</h2>
           </div>
         </div>
           <div class="row row-fee gx-md-0">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up">
               <p>Rp5000 <br> <span style="letter-spacing: 2px;">Domestic</span></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up">
               <p>Rp15000 <br> <span style="letter-spacing: 2px">Non-Domestic</span></p>
             </div>
           </div>
@@ -101,9 +116,10 @@
     <section id="series" class="series">
       <div class="container standarize-container-padding">
         <div class="row ">
-          <div class="col-12 text-center" lang="en">
+          <div class="col-12 text-center" data-aos="fade-up" lang="en">
             <h2><span>Pelisan</span> The Series</h2>
           </div>
+<<<<<<< HEAD
           <div id="video" class="video">
             
             <div id="left-arrow">
@@ -120,26 +136,45 @@
               </a>
               <div id="igtv">
             </div>
-            </div>
-            <div id="video3">
-              <img id="kanan" src="assets/series/ep2fix.jpg">
-            </div>
-            <div id="right-arrow">
-              <button onclick="next();list()" style="background-color: transparent;border: none;">
-                <img id="right" src="assets/series/angle-down 3.png" alt="right">
-              </button>
-            </div>
-          </div>
+=======
 
-          <div id="seriesButton">
-            <button id="ep1" onclick="ep1();list()"></button>
-            <button id="ep2" onclick="ep2();list()"></button>
-            <button id="ep3" onclick="ep3();list()"></button>
-            <button id="ep4" onclick="ep4();list()"></button>
-            <button id="ep5" onclick="ep5();list()"></button>
-          </div>
-          <div id="seriesTitle">
-            <h1 id="textTitle">The Beauty of Langgahan : <b>Episode 1</b></h1>
+          <div data-aos="fade-up">
+            <div id="video" class="video">
+              
+              <div id="left-arrow">
+                <button onclick="prev();list()" style="background-color: transparent;border: none;">
+                  <img id="left" src="assets/series/angle-down 2.png" alt="Left">
+                </button>
+              </div>
+              <div id="video1">
+                <img id="kiri" src="assets/series/ep5fix.jpg">
+              </div>
+              <div id="videomain">
+                <a class="venobox" data-autoplay="true" data-vbtype="video" href="http://youtu.be/">
+                  <img id="utama" src="assets/series/ep1fix.jpg">
+                </a>
+              </div>
+              <div id="video3">
+                <img id="kanan" src="assets/series/ep2fix.jpg">
+              </div>
+              <div id="right-arrow">
+                <button onclick="next();list()" style="background-color: transparent;border: none;">
+                  <img id="right" src="assets/series/angle-down 3.png" alt="right">
+                </button>
+              </div>
+>>>>>>> 112ec2798011052a31ac1d9ffc810e6d1bd6b4b6
+            </div>
+  
+            <div id="seriesButton">
+              <button id="ep1" onclick="ep1();list()"></button>
+              <button id="ep2" onclick="ep2();list()"></button>
+              <button id="ep3" onclick="ep3();list()"></button>
+              <button id="ep4" onclick="ep4();list()"></button>
+              <button id="ep5" onclick="ep5();list()"></button>
+            </div>
+            <div id="seriesTitle">
+              <h1 id="textTitle">The Beauty of Langgahan : <b>Episode 1</b></h1>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -153,10 +188,10 @@
       <div class="gradient">
         <div class="container">
           <div class="row gx-lg-6">
-            <div class="col-md-6 order-md-2 order-sm-1 text-center">
+            <div class="col-md-6 order-md-2 order-sm-1 text-center" data-aos="fade-up">
               <img src="assets\gallery\edited\landscape\about_pelisan.jpg" alt="Gate of Pelisan Waterfall">
             </div>
-            <div class="col-md-6 order-md-1 order-sm-2" style="padding-right: 2vw;">
+            <div class="col-md-6 order-md-1 order-sm-2" style="padding-right: 2vw;" data-aos="fade-up">
               <h2 class="will-translate"><strong>Tentang</strong><br>Air Terjun Pelisan</h2>
               <p style="padding-top: 10px;" class="will-translate">Air terjun Pelisan merupakan air terjun yang berada di banjar adat Langgahan Kangin, desa Langgahan, kecamatan Kintamani, kabupaten Bangli, Bali. Air terjun ini tidak terjun langsung ke tanah. Namun, mengalir pada tebih miring yang ada di lembah sungai. Hal yang membuat air terjun ini lebih cantik, karena mata airnya muncul di sejumlah titik. Selain itu, alam sekitarnya yang masih asri, sangat idel bagi anda yang mencari kesunyian serta kedamaian karena lokasinya yang tersembunyi dan jauh dari kebisingan</p>
             </div>
@@ -170,64 +205,37 @@
     <section class="melukad">
       <div class="container gx-lg-6">
         <div class="row">
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center" data-aos="fade-up">
             <img src="/assets/gallery/melukat.jpg" alt="Melukad" style="align-items: right;">
           </div>
-          <div class="col-md-6" style="padding-left: 2vw;">
+          <div class="col-md-6" style="padding-left: 2vw;" data-aos="fade-up">
             <h2>Melukat</h2>
-            <p class="will-translate">Kalian dapat melukat di air terjun Pelisan, karena terdapat areal suci khusus. Melukat merupakan salah satu upacara pembersihan dalam diri manusia. Upacara melukat hingga kini tetap dilakukan dan sudah menjadi tradisi bagi umat Hindu di Bali yang biasa dilakukan di sumber air tertentu.</p>
+            <p class="will-translate">Kalian dapat melukat di air terjun Pelisan, karena terdapat areal suci khusus. Melukat merupakan salah satu upacara pembersihan dalam diri manusia. Upacara melukat hingga kini tetap dilakukan dan sudah menjadi tradisi bagi umat Hindu di Bali yang biasa dilakukan di sumber air tertentu.<br><br>
+            <strong>Larangan</strong><br>
+            Namun, terdapat larangan bagi yang ingin melukat. Orang yang sedang berduka karena memiliki kerabat yang meninggal serta sedang haid tidak diizinkan untuk melukat.</p>
           </div>
         </div>
       </div>
     </section>
     <!-- End Melukad Section -->
 
-    <!-- Start Why You Should Visit Pelisan Section -->
-    <!-- <section class="should-visit">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-12">
-            <h2>Why You Should Visit Pelisan Waterfall</h2>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-12" style="padding-top: 1vw;">
-            <p>Selain melihat air terjun Pelisan yang menawan, kamu juga dapat menikmati</p>
-          </div>
-        </div>
-        <div class="row" style="padding-top: 3vw;">
-          <div class="col-md-4 why">
-            <img src="/assets/hero_images/3_darken.jpg" alt="" style="width: 100%">
-            <p>Air yang jernih</p>
-          </div>
-          <div class="col-md-4">
-            <p>Spot Foto Menarik</p>
-          </div>
-          <div class="col-md-4">
-            <p>Keheningan dan Kedamaian</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Why You Should Visit Pelisan Section -->
-
     <!-- Start Div Gallery -->
     <section  class="gallery" id="gallery">
         <div class="container" style="position: relative;">
           <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" data-aos="fade-up">
               <h2 class="will-translate">Galeri</h2>
             </div>
           </div>
           <div class="row">
-            <div class="container-slideshow">
+            <div class="container-slideshow" data-aos="fade-up">
+              
+              <div class="slide-full">
+                <img src="/assets/gallery/landscape/12.jpg" alt="">
+              </div>
               
               <div class="slide-full">
                 <img src="/assets/gallery/landscape/1.jpg" alt="">
-              </div>
-    
-              <div class="slide-full">
-                <img src="/assets/gallery/landscape/2.jpg" alt="">
               </div>
     
               <div class="slide-full">
@@ -239,7 +247,7 @@
               </div>
     
               <div class="slide-full">
-                <img src="/assets/gallery/landscape/5.jpg" alt="">
+                <img src="/assets/gallery/landscape/7.jpg" alt="">
               </div>
     
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -248,11 +256,11 @@
               <div class="row-gallery">
     
                 <div class="column-gallery">
-                  <img class="demo cursor" src="/assets/gallery/landscape/1_resize.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                  <img class="demo cursor" src="/assets/gallery/landscape/12_resize.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
                 </div>
                 
                 <div class="column-gallery">
-                  <img class="demo cursor" src="/assets/gallery/landscape/2_resize.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+                  <img class="demo cursor" src="/assets/gallery/landscape/1_resize.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
                 </div>
                 
                 <div class="column-gallery">
@@ -264,13 +272,13 @@
                 </div>
                 
                 <div class="column-gallery">
-                  <img class="demo cursor" src="/assets/gallery/landscape/5_resize.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+                  <img class="demo cursor" src="/assets/gallery/landscape/7_resize.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
                 </div>
     
               </div>
             </div>
   
-            <div class="button-gallery">
+            <div class="button-gallery" data-aos="fade-up" data-aos-delay="10" data-aos-offset="0">
               <a href="gallery.html">
                 <button class="will-translate">Foto Lainnya</button>
               </a>
@@ -287,14 +295,14 @@
           <div class="row">
             <div class="col-12">
               <center>
-                <h2 class="will-translate">Tampilan  360<sup>o</sup></h2>
-                <p class="will-translate">Rasakan pengalaman perjalanan virtual dengan mengklik tanda pada peta</p>
+                <h2 class="will-translate" data-aos="fade-up">Tampilan  360<sup>o</sup></h2>
+                <p class="will-translate" data-aos="fade-up">Rasakan pengalaman perjalanan virtual dengan mengklik tanda pada peta</p>
               </center>
             </div>
           </div>
           <div class="row">
             <div class="content">
-              <div class="image">
+              <div class="image" data-aos="fade-up">
                 <img class="main" src="assets/svg/map.svg">
                 <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795" target="blank">
                   <img class="pin pin-img-1" src="assets/svg/pin-1.svg" alt="">
@@ -309,30 +317,29 @@
                   <img class="pin pin-img-4" src="assets/svg/pin-4.svg" alt="">
                 </a>
               </div>
-              <div class="view-content">
+              <div class="view-content" data-aos="fade-up">
                 <ul>
-                  <li class="pinned"> 
+                  <li class="pinned will-translate-360"> 
                     <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795" target="blank">
                       1) Plang Desa Dampingan
                     </a>
                   </li>
-                  <li class="pinned">
+                  <li class="pinned will-translate-360">
                     <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795?scene=61669658739f857e10367484" target="blank">
                       2) Pertigaan Menuju Desa Langahan
                     </a>
                   </li>
-                  <li class="pinned">
+                  <li class="pinned will-translate-360">
                     <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795?scene=61669682939f9760a9416594"target="blank">
                       3) Pertigaan Desa Langahan
                     </a>
                   </li>
-                  <li class="pinned">
+                  <li class="pinned will-translate-360">
                     <a href="https://app.lapentor.com/sphere/virtual-tour-1634218795?scene=616694d21962ca4cdf410623"target="blank">
-                      4) 5000m Menuju Pelisan Waterfall
+                      4) Belokan ke Air Terjun dari Desa Langgahan
                     </a>
                   </li>
                 </ul>
-
               </div>
             </div>
           </div>
@@ -346,17 +353,17 @@
       <div class="container">
         <div class="row ">
           <div class="col-12">
-            <h2 class="will-translate">Lokasi</h2>
+            <h2 class="will-translate" data-aos="fade-up">Lokasi</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-up">
             <iframe
               frameborder="0" style="border:0"
               src="https://www.google.com/maps/embed/v1/search?key=api_key_pelisan_email&q=Pelisan+Waterfall+Entrance" allowfullscreen id="maps-embed">
             </iframe>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-up">
             <div class="row gx-md-1 row-subrow-location">
               <div class="col-md-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
@@ -365,9 +372,9 @@
                 </svg>
               </div>
               <div class="col-md-10 information">
-                <p> <span>Pelisan Waterfall</span> <br>Langgahan, Kintamani, Bangli Regency, Bali</p>
+                <p class="will-translate-location"> <span>Air Terjun Pelisan</span> <br>Desa Langgahan, Kecamatan Kintamani, Kabupaten Bangli, Bali</p>
                 <a href="https://www.google.com/maps/place/Pelisan+Waterfall+Entrance/@-8.3199614,115.2670658,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd18b0353595631:0xcc2ad6dd1a4bd5e7!8m2!3d-8.3199667!4d115.2692545" target="blank" style="text-align: left;">
-                  <button class="will-translate">Kunjungi di Gmaps</button>
+                  <button class="will-translate">Cek pada Gmaps</button>
                 </a>
               </div>
             </div>
@@ -382,11 +389,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="will-translate">Ulasan Pengunjung</h2 >
+            <h2 class="will-translate" data-aos="fade-up">Ulasan Pengunjung</h2 >
           </div>
         </div>
         <div id="tourist-review" class="row">
-          <div class="col-md-9 col-lg-9 col-sm-10 col-xl-8">
+          <div class="col-md-9 col-lg-9 col-sm-10 col-xl-8" data-aos="fade-up">
             <div id="review" class="review">
               <div id="left-arrow">
                 <button onclick="prevr();listReview()" style="background-color: transparent;border: none;">
@@ -416,7 +423,7 @@
               <button id="r5" onclick="r5();listReview()"></button>
             </div>
           </div>
-          <div class="col-md-9 col-lg-3 col-sm-10 col-xl-4">
+          <div class="col-md-9 col-lg-3 col-sm-10 col-xl-4" data-aos="fade-up">
             <p id="reviewr" class="reviewer-impression">Wisata alam di Bali, air terjun Pelisan di Desa Langgahan yang belum banyak orang tahu.</p>
             <p id="nama" class="reviewer-name"> <u>Vynna Valencia</u></p>
           </div>
@@ -428,12 +435,12 @@
     <!-- Start Section Footer -->
     <section class="footer" id="footer">
       <div class="container">
-        <div class="row">
+        <div class="row footer-content">
           <div class="col-md-3 text-center">
             <br class="logo-line">
             <img class="logo" src="assets/logo/logo.svg" alt="brand langgahan"> 
             <p class="follow-us will-translate"> <strong>Ikuti Kami</strong> </p>
-              <a href="https://www.instagram.com/pelisanwaterfall/" target="blank">
+              <a class="container-footer-content" href="https://www.instagram.com/pelisanwaterfall/" target="blank">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                   <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                 </svg> @pelisanwaterfall
@@ -441,49 +448,77 @@
           </div>
           <div class="col-md-3 unorder-list-of-information">
             <h6 class="will-translate">
-              <strong>Informasi Pilihan</strong></h6>
-            <a class="will-translate" href="#home"> <p>Home</p> </a>
-            <a class="will-translate" href="#gallery"> <p>Gallery</p> </a>
-            <a class="will-translate" href="#series"> <p>Pelisan The Series</p> </a>
-            <a class="will-translate" href="#about-us"> <p>About Us</p> </a>
+              <strong>Informasi Pilihan</strong>
+            </h6>
+            <div class="container-footer-content">
+              <a class="will-translate" href="#home"> <p>Home</p> </a>
+              <a class="will-translate" href="#gallery"> <p>Gallery</p> </a>
+              <a class="will-translate" href="#series"> <p>Pelisan The Series</p> </a>
+              <a class="will-translate" href="#about-us"> <p>About Us</p> </a>
+            </div>
           </div>
           <div class="col-md-3">
             <h6 class="will-translate">
               <strong>Kantor Desa Langgahan</strong>
             </h6>
-            <p>
-              Jl. Tukad Pelisan No 32 <br> Kintamani, Bangli, <br> Bali
-            </p>
+            <p class="container-footer-content">Desa Langgahan,<br>Kec. Kintamani, Kabupaten Bangli, <br>Bali 80572
           </div>
           <div class="col-md-3">
             <h6 id="contact-us" class="will-translate">
               <strong>Kontak Kami</strong>
             </h6>
-            <p class="will-translate"><strong>Phone Number</strong> : </p>
-            <a href="tel:+6281236875797"> +6281236875797 (Made) </a>
-            <a href="tel:+6281238286139"> +6281238286139 (Mariawan) </a>
-            <p><strong>E-Mail</strong> : <br></p>
-            <a href="mailto: pelisan.waterfall@gmail.com">pelisan.waterfall@gmail.com</a>
+            <div class="phone-number container-footer-content">
+              <p class="will-translate"><strong>Phone Number</strong> :</p>
+              <a href="tel:+6281236875797">+6281236875797 (Made)</a> <br>
+              <a href="tel:+6281238286139">+6281238286139 (Mariawan)</a>
+            </div>
+            <div class="email container-footer-content">
+              <p><strong>E-Mail</strong> : <br></p>
+              <a href="mailto: pelisan.waterfall@gmail.com">pelisan.waterfall@gmail.com</a>
+            </div>
           </div>
         </div>
         <div class="row copyright">
-          <div class="col-12 text-center">
+          <div class="col-12">
             <p>Copyright &copy; Pokdarwis 2021</p>
           </div>
         </div>
       </div>
     </section>
     <!-- End Section Footer -->
-
+    <script>
+      AOS.init({
+        once: true,
+        offset: 80,
+        duration: 1400,
+        easing: 'ease-in-out-cubic',
+        delay: 300,
+        once: false
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>-->
-    
+  
     <!-- For Gmaps API Purpose, the file have ignored in .gitignore file -->
+    <script type="text/javascript" src="/js/api.js"></script>
+    
+    <!--  -->
     <script src="/js/slideshow.js"></script>
     <script src="/js/api.js"></script>
     <script src="/js/translate.js"></script>
     <script src="js/navbar.js"></script>
+    <script>
+      function justOneFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "nav") {
+          x.className = "responsive";
+          console.log("help makk");
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
   </body>
 </html>
 

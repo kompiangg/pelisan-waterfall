@@ -8,13 +8,16 @@
     <!-- Icon -->
     <link rel="icon" href="assets/logo/mini-logos.svg">
     <!-- Font -->
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
     
+    <!-- fancy -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
@@ -22,48 +25,184 @@
     <title>Pelisan Gallery</title>
 </head>
 <body>
-    <div class="gallery-wrap">
 
-            <div class="gallery-header">
-                <h3>Photo <span>Gallery</span></h3>
+    <!-- Start Navbar Section -->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <div class="kiri">  
+            <a href="#landing" class="logo"><img src="assets/logo/logo.svg" alt="Logo Langgahan"></a>
+            <ul>
+              <li class="menu will-translate-navbar"><a class="landing" href="index.html#home">Beranda</a></li>
+              <li class="menu will-translate-navbar"><a class="about-us" href="index.html#about-us">Tentang Kami</a></li>
+              <li class="menu will-translate-navbar"><a class="gallery active" href="index.html#gallery">Galeri</a></li>
+              <li class="menu will-translate-navbar"><a class="location" href="index.html#location">Lokasi</a></li>
+              <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+            </ul>
+          </div>
+          <div class="kanan">
+            <select name="langg" id="id" onChange="updateContent(); updateReview()">
+              <div class="select-items">
+                <option value="IDN">IDN</option>
+                <option value="ENG">ENG</option>
+              </div>
+            </select>
+            <a href="javascript:void(0)" class="icon" onClick="justOneFunction()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="nav" id="nav">
+          <li class="menu will-translate-navbar"><a class="landing" href="index.html#home">Beranda</a></li>
+          <li class="menu will-translate-navbar"><a class="about-us" href="index.html#about-us">Tentang Kami</a></li>
+          <li class="menu will-translate-navbar"><a class="gallery active" href="index.html#gallery">Galeri</a></li>
+          <li class="menu will-translate-navbar"><a class="location" href="index.html#location">Lokasi</a></li>
+          <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+        </ul>
+      </nav>
+      <!-- End Navbar -->
+
+    <div class="container pad" style="padding-top: 90px;">
+            <div class="wrap4gallery">
+                <div class="gallery-header">
+                    <h3>Photo <span>Gallery</span></h3>
+                </div>
             </div>
 
-            <div class="main-wrap">
-                <img src="assets/gallery/13.jpg" alt="">
-                <img src="assets/gallery/1.jpg" alt="">
-                <img src="assets/gallery/14.jpg" alt="">
-                <img src="assets/gallery/2.jpg" alt="">
-                <img src="assets/gallery/3.jpg" alt="">
-                <img src="assets/gallery/15.jpg" alt="">
-                <img src="assets/gallery/4.jpg" alt="">
-                <img src="assets/gallery/16.jpg" alt="">
-            </div>
-            
-            <div class="main-wrap">
-                <img src="assets/gallery/5.jpg" alt="">
-                <img src="assets/gallery/17.jpg" alt="">
-                <img src="assets/gallery/18.jpg" alt="">
-                <img src="assets/gallery/6.jpg" alt="">
-                <img src="assets/gallery/19.jpg" alt="">
-                <img src="assets/gallery/7.jpg" alt="">
-                <img src="assets/gallery/20.jpg" alt="">
-                <img src="assets/gallery/8.jpg" alt="">
-            </div>
-            
-            <div class="main-wrap">
-                <img src="assets/gallery/21.jpg" alt="">
-                <img src="assets/gallery/22.jpg" alt="">
-                <img src="assets/gallery/23.jpg" alt="">
-                <img src="assets/gallery/9.jpg" alt="">
-                <img src="assets/gallery/10.jpg" alt="">
-                <img src="assets/gallery/24.jpg" alt="">
-                <img src="assets/gallery/11.jpg" alt="">
-                <img src="assets/gallery/12.jpg" alt="">
-            </div>
+            <div class="row">
+                <!-- col-1 -->
+                <div class="column">
+                    
+                    <div class="item">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/1.jpg">
+                            <img src="assets/gallery/landscape/1.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    
+                    <div class="item">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(2).jpg">
+                            <img src="assets/gallery/portrait/(2).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
 
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(6).jpg">
+                            <img src="assets/gallery/portrait/(6).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/8.jpg">
+                            <img src="assets/gallery/landscape/8.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/5.jpg">
+                            <img src="assets/gallery/landscape/12.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                <!-- col-2 -->
+                <div class="column">
+                    
+                    <div class="item">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(1).jpg">
+                            <img src="assets/gallery/portrait/(1).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/3.jpg">
+                            <img src="assets/gallery/landscape/3.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/5.jpg">
+                            <img src="assets/gallery/landscape/5.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(7).jpg">
+                            <img src="assets/gallery/portrait/(7).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(10).jpg">
+                            <img src="assets/gallery/portrait/(10).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                <!-- col-3 -->
+                <div class="column">
+                    
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/2.jpg">
+                            <img src="assets/gallery/landscape/2.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/4.jpg">
+                            <img src="assets/gallery/landscape/4.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(5).jpg">
+                            <img src="assets/gallery/portrait/(5).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/6.jpg">
+                            <img src="assets/gallery/landscape/6.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(8).jpg">
+                            <img src="assets/gallery/portrait/(8).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/melukat.jpg">
+                            <img src="assets/gallery/melukat.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- col-4 -->
+                <div class="column">
+                    
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(3).jpg">
+                            <img src="assets/gallery/portrait/(3).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/landscape/7.jpg">
+                            <img src="assets/gallery/landscape/7.jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(4).jpg">
+                            <img src="assets/gallery/portrait/(4).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="item ">
+                        <a class="fancybox" data-fancybox="gallery1" href="assets/gallery/portrait/(9).jpg">
+                            <img src="assets/gallery/portrait/(9).jpg" width="100%" height="100%">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
     </div>
     
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- fancy -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </body>
 </html>

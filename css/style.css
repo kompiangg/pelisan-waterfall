@@ -1061,6 +1061,25 @@ Extra extra large	xxl	    ≥1400px
         filter: none;
     }
 
+    .content .image .pin-img-1 {
+        top: 41%;
+        left: 12%;
+    }
+
+    .content .image .pin-img-2 {
+        top: 6.5%;
+        left: 79.6%;
+    }
+
+    .content .image .pin-img-3 {
+        top: 27%;
+        left: 59%;
+    }
+
+    .content .image .pin-img-4 {
+        top: 46.8%;
+        left: 47%;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -1166,7 +1185,7 @@ Extra extra large	xxl	    ≥1400px
     }
 
     .view-360 p {
-        font-size: 1.7vw;
+        font-size: 1.8vw;
     }
 
     .row .content img.main {
@@ -1174,7 +1193,7 @@ Extra extra large	xxl	    ≥1400px
     }
 
     .view-content .pinned a {
-        font-size: 1.6vw;
+        font-size: 1.9vw;
     }
     
     .content .image .pin {
@@ -1189,6 +1208,25 @@ Extra extra large	xxl	    ≥1400px
         width: 17vw;
     }
 
+    .content .image .pin-img-1 {
+        top: 39%;
+        left: 10%;
+    }
+
+    .content .image .pin-img-2 {
+        top: 3.5%;
+        left: 78.6%;
+    }
+
+    .content .image .pin-img-3 {
+        top: 24%;
+        left: 57%;
+    }
+
+    .content .image .pin-img-4 {
+        top: 45.8%;
+        left: 45%;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -1567,11 +1605,11 @@ Extra extra large	xxl	    ≥1400px
     }
 
     .view-content .pinned a {
-        font-size: 1.8vw;
+        font-size: 2.5vw;
     }
     
     .view-360 p {
-        font-size: 2vw;
+        font-size: 2.6vw;
         padding-top: 2vw;
     }
 

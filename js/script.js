@@ -227,17 +227,17 @@ $("#right-arrow").click(function() {
 function list(){
     if(x == 0){
         $('#kiri').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/series/ep5fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/seriesfix/Episode5.png"">').hide();
             $(this).replaceWith(div);
             $('#kiri').fadeIn("slow");
         });
         $('#utama').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/series/ep1fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/seriesfix/Episode1.png">').hide();
             $(this).replaceWith(div);
             $('#utama').fadeIn("slow");
         });
         $('#kanan').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/series/ep2fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/seriesfix/Episode2.png">').hide();
             $(this).replaceWith(div);
             $('#kanan').fadeIn("slow");
         });
@@ -246,6 +246,7 @@ function list(){
             $("#textTitle").replaceWith(text);
             $('#textTitle').fadeIn("slow");
         });
+        $("#ytlink").attr("href", "https://youtu.be/1knJkrIm3P8");
         // $('#videomain').html(videoArray[1]).fadeIn();
         // $('#video3').html(videoArray[2]).fadeIn();
         // document.getElementById("video1").innerHTML = videoArray[0];
@@ -257,17 +258,17 @@ function list(){
         
     }else if(x == 1){
         $('#kiri').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/series/ep1fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/seriesfix/Episode1.png">').hide();
             $(this).replaceWith(div);
             $('#kiri').fadeIn("slow");
         });
         $('#utama').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/series/ep2fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/seriesfix/Episode2.png">').hide();
             $(this).replaceWith(div);
             $('#utama').fadeIn("slow");
         });
         $('#kanan').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/series/ep3fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/seriesfix/Episode3.png">').hide();
             $(this).replaceWith(div);
             $('#kanan').fadeIn("slow");
         });
@@ -276,21 +277,22 @@ function list(){
             $("#textTitle").replaceWith(text);
             $('#textTitle').fadeIn("slow");
         });
+        $("#ytlink").attr("href", "https://youtu.be/hHpOTO7p66w");
         // x=x+1;
     
     }else if(x == 2){
         $('#kiri').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/series/ep2fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/seriesfix/Episode2.png">').hide();
             $(this).replaceWith(div);
             $('#kiri').fadeIn("slow");
         });
         $('#utama').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/series/ep3fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/seriesfix/Episode3.png">').hide();
             $(this).replaceWith(div);
             $('#utama').fadeIn("slow");
         });
         $('#kanan').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/series/ep4fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/seriesfix/Episode4.png">').hide();
             $(this).replaceWith(div);
             $('#kanan').fadeIn("slow");
         });
@@ -299,20 +301,23 @@ function list(){
             $("#textTitle").replaceWith(text);
             $('#textTitle').fadeIn("slow");
         });
+        $("#ytlink").attr("href", "https://youtu.be/9wcOqpAmeMY");
+
+        
         // x=x+1;
     }else if(x == 3){
         $('#kiri').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/series/ep3fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/seriesfix/Episode3.png">').hide();
             $(this).replaceWith(div);
             $('#kiri').fadeIn("slow");
         });
         $('#utama').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/series/ep4fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/seriesfix/Episode4.png">').hide();
             $(this).replaceWith(div);
             $('#utama').fadeIn("slow");
         });
         $('#kanan').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/series/ep5fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/seriesfix/Episode5.png">').hide();
             $(this).replaceWith(div);
             $('#kanan').fadeIn("slow");
         });
@@ -321,22 +326,25 @@ function list(){
             $("#textTitle").replaceWith(text);
             $('#textTitle').fadeIn("slow");
         });
+        $("#ytlink").attr("href", "https://youtu.be/PuQf76MWu00");
+
+        
         // x =0;
         // x=x+1;
     }
     else if(x == 4){
         $('#kiri').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/series/ep4fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="kiri" src="assets/seriesfix/Episode4.png">').hide();
             $(this).replaceWith(div);
             $('#kiri').fadeIn("slow");
         });
         $('#utama').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/series/ep5fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;object-fit: cover;" id="utama" src="assets/seriesfix/Episode5.png">').hide();
             $(this).replaceWith(div);
             $('#utama').fadeIn("slow");
         });
         $('#kanan').fadeOut("slow", function(){
-            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/series/ep1fix.jpg">').hide();
+            var div = $('<img style="max-width:100%;max-height:100%;" id="kanan" src="assets/seriesfix/Episode1.png">').hide();
             $(this).replaceWith(div);
             $('#kanan').fadeIn("slow");
         });
@@ -345,6 +353,8 @@ function list(){
             $("#textTitle").replaceWith(text);
             $('#textTitle').fadeIn("slow");
         });
+        $("#ytlink").attr("href", "https://youtu.be/5qUAcu7WxNc");
+
         // x =0;
         // x++;
         

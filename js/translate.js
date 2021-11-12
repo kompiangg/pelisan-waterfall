@@ -9,12 +9,18 @@ function updateContent() {
   let will_translate_navbar = document.querySelectorAll('.will-translate-navbar');
   let will_translate_location = document.querySelectorAll('.will-translate-location');
   let will_translate_360 = document.querySelectorAll('.will-translate-360');
+
   if (update() == "ENG") {
     document.querySelector('html').setAttribute("lang", "en");
-    will_translate_navbar[0].outerHTML = '<li class="nav menu will-translate-navbar" id="active"><a href="#home">Home</a></li>';
-    will_translate_navbar[1].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#gallery">Gallery</a></li>';
-    will_translate_navbar[2].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#location">Location</a></li>';
-    will_translate_navbar[3].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#contact-us">Contact Us</a></li>';
+    will_translate_navbar[0].innerHTML = 'Home';
+    will_translate_navbar[1].innerHTML = 'About Us';
+    will_translate_navbar[2].innerHTML = 'Gallery';
+    will_translate_navbar[3].innerHTML = 'Location';
+
+    will_translate_navbar[4].innerHTML = 'Home';
+    will_translate_navbar[5].innerHTML = 'About Us';
+    will_translate_navbar[6].innerHTML = 'Gallery';
+    will_translate_navbar[7].innerHTML = 'Location';
     
     will_translate[0].outerHTML = '<p class="will-translate">The island of Bali is not always about the beach. Many hidden paradises are waiting to be discovered. One of them is the Pelisan Waterfall, which is located in the Kintamani sub-district of Bangli. This hidden paradise waiting to be explored </p>';
     will_translate[1].outerHTML = '<h2 class="will-translate">Entry Fee</h2>';
@@ -48,10 +54,15 @@ function updateContent() {
 
   else if (update() == "IDN") {
     document.querySelector('html').setAttribute("lang", "id");
-    will_translate_navbar[0].outerHTML = '<li class="nav menu will-translate-navbar" id="active"><a href="#home">Beranda</a></li>';
-    will_translate_navbar[1].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#gallery">Galeri</a></li>';
-    will_translate_navbar[2].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#location">Lokasi</a></li>';
-    will_translate_navbar[3].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#contact-us">Kontak Kami</a></li>';
+    will_translate_navbar[0].innerHTML = 'Beranda';
+    will_translate_navbar[1].innerHTML = 'Tentang Kami';
+    will_translate_navbar[2].innerHTML = 'Galeri';
+    will_translate_navbar[3].innerHTML = 'Lokasi';
+
+    will_translate_navbar[4].innerHTML = 'Beranda';
+    will_translate_navbar[5].innerHTML = 'Tentang Kami';
+    will_translate_navbar[6].innerHTML = 'Galeri';
+    will_translate_navbar[7].innerHTML = 'Lokasi';
 
     will_translate[0].outerHTML = '<p class="will-translate">Pulau Bali tidak selalu tentang pantai. Banyak surga tersembunyi yang menunggu untuk ditemui. Salah satunya adalah air terjun Pelisan ini, yang berlokasi di kecamatan Kintamani, kabupaten Bangli. Surga tersembunyi ini menunggu untuk dijelajahi.</p>';
     will_translate[1].outerHTML = '<h2 class="will-translate">Tiket Masuk</h2>';

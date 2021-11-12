@@ -31,15 +31,15 @@
         <div class="kiri">  
           <a href="#landing" class="logo"><img src="assets/logo/logo.svg" alt="Logo Langgahan"></a>
           <ul>
-            <li class="menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
-            <li class="menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
-            <li class="menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
-            <li class="menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
-            <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+            <li class="menu"><a class="landing active will-translate-navbar" href="#home">Beranda</a></li>
+            <li class="menu"><a class="gallery will-translate-navbar" href="#gallery">Galeri</a></li>
+            <li class="menu"><a class="view" href="#view-360">Virtual Tour</a></li>
+            <li class="menu"><a class="about-us will-translate-navbar" href="#about-us">Tentang Kami</a></li>
+            <li class="menu"><a class="location will-translate-navbar" href="#location">Lokasi</a></li>
           </ul>
         </div>
         <div class="kanan">
-          <select name="langg" id="id" onChange="updateContent(); updateReview()">
+          <select name="langg" id="id" onChange="updateContent()">
             <div class="select-items">
               <option value="IDN">IDN</option>
               <option value="ENG">ENG</option>
@@ -53,11 +53,11 @@
         </div>
       </div>
       <ul class="nav" id="nav">
-        <li class="menu will-translate-navbar"><a class="landing active" href="#home">Beranda</a></li>
-        <li class="menu will-translate-navbar"><a class="about-us" href="#about-us">Tentang Kami</a></li>
-        <li class="menu will-translate-navbar"><a class="gallery" href="#gallery">Galeri</a></li>
-        <li class="menu will-translate-navbar"><a class="location" href="#location">Lokasi</a></li>
-        <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+        <li class="menu"><a class="landing active will-translate-navbar" href="#home">Beranda</a></li>
+        <li class="menu"><a class="gallery will-translate-navbar" href="#gallery">Galeri</a></li>
+        <li class="menu"><a class="view" href="#view-360">Virtual Tour</a></li>
+        <li class="menu"><a class="about-us will-translate-navbar" href="#about-us">Tentang Kami</a></li>
+        <li class="menu"><a class="location will-translate-navbar" href="#location">Lokasi</a></li>
       </ul>
     </nav>
     <!-- End Navbar -->
@@ -342,7 +342,7 @@
           <div class="col-md-6" data-aos="fade-up">
             <iframe
               frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/search?key=api_key_pelisan_email&q=Pelisan+Waterfall+Entrance" allowfullscreen id="maps-embed">
+              src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDMkwuBSqaYefGHAKB61aXXkdBSJluCryg&q=Pelisan+Waterfall+Entrance" allowfullscreen id="maps-embed">
             </iframe>
           </div>
           <div class="col-md-6" data-aos="fade-up">
@@ -383,13 +383,13 @@
                 </button>
               </div>
               <div id="review1">
-                <img id="kirir" src="assets/review/ari.jpg">
+                <img id="kirir" src="assets/review/andi.png">
               </div>
               <div id="reviewmain">
                 <img id="utamar" src="assets/review/vvvv.jpg">
               </div>
               <div id="review3">
-                <img id="kananr" src="assets/review/bulan.jpg">
+                <img id="kananr" src="assets/review/maysa.jpg">
               </div>
               <div id="right-arrow">
                 <button onclick="nextr();listReview()" style="background-color: transparent;border: none;">
@@ -471,11 +471,10 @@
     <script>
       AOS.init({
         once: true,
-        offset: 60,
-        duration: 1350,
+        offset: 265,
+        duration: 1300,
         easing: 'ease-in-out-cubic',
-        delay: 200,
-        once: false
+        delay: 50,
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -485,7 +484,7 @@
     <!-- For Gmaps API Purpose, the file have ignored in .gitignore file -->
     <script type="text/javascript" src="/js/api.js"></script>
     
-    <!--  -->
+    <!-- JS -->
     <script src="/js/slideshow.js"></script>
     <script src="/js/api.js"></script>
     <script src="/js/translate.js"></script>
@@ -495,7 +494,6 @@
         var x = document.getElementById("nav");
         if (x.className === "nav") {
           x.className = "responsive";
-          console.log("help makk");
         } else {
           x.className = "nav";
         }

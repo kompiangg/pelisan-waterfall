@@ -32,15 +32,15 @@
           <div class="kiri">  
             <a href="#landing" class="logo"><img src="assets/logo/logo.svg" alt="Logo Langgahan"></a>
             <ul>
-              <li class="menu will-translate-navbar"><a class="landing" href="index.html#home">Beranda</a></li>
-              <li class="menu will-translate-navbar"><a class="about-us" href="index.html#about-us">Tentang Kami</a></li>
-              <li class="menu will-translate-navbar"><a class="gallery active" href="index.html#gallery">Galeri</a></li>
-              <li class="menu will-translate-navbar"><a class="location" href="index.html#location">Lokasi</a></li>
-              <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+              <li class="menu"><a class="landing will-translate-navbar" href="index.html#home">Beranda</a></li>
+              <li class="menu"><a class="gallery active will-translate-navbar" href="#gallery">Galeri</a></li>
+              <li class="menu"><a class="view" href="index.html#view-360">Virtual Tour</a></li>
+              <li class="menu"><a class="about-us will-translate-navbar" href="index.html#about-us">Tentang Kami</a></li>
+              <li class="menu"><a class="location will-translate-navbar" href="index.html#location">Lokasi</a></li>
             </ul>
           </div>
           <div class="kanan">
-            <select name="langg" id="id" onChange="updateContent(); updateReview()">
+            <select name="langg" id="id" onChange="updateContent()">
               <div class="select-items">
                 <option value="IDN">IDN</option>
                 <option value="ENG">ENG</option>
@@ -54,11 +54,11 @@
           </div>
         </div>
         <ul class="nav" id="nav">
-          <li class="menu will-translate-navbar"><a class="landing" href="index.html#home">Beranda</a></li>
-          <li class="menu will-translate-navbar"><a class="about-us" href="index.html#about-us">Tentang Kami</a></li>
-          <li class="menu will-translate-navbar"><a class="gallery active" href="index.html#gallery">Galeri</a></li>
-          <li class="menu will-translate-navbar"><a class="location" href="index.html#location">Lokasi</a></li>
-          <!-- <li class="nav menu will-translate-navbar"><a class="footer" href="#contact-us">Kontak Kami</a></li> -->
+          <li class="menu"><a class="landing active will-translate-navbar" href="index.html#home">Beranda</a></li>
+          <li class="menu"><a class="gallery active will-translate-navbar" href="#gallery">Galeri</a></li>
+          <li class="menu"><a class="view" href="index.html#view-360">Virtual Tour</a></li>
+          <li class="menu"><a class="about-us will-translate-navbar" href="index.html#about-us">Tentang Kami</a></li>
+          <li class="menu"><a class="location will-translate-navbar" href="index.html#location">Lokasi</a></li>
         </ul>
       </nav>
       <!-- End Navbar -->
@@ -199,7 +199,18 @@
 
             </div>
     </div>
-    
+
+    <script>
+        function justOneFunction() {
+          var x = document.getElementById("nav");
+          if (x.className === "nav") {
+            x.className = "responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+      </script>
+    <script src="/js/translate.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- fancy -->

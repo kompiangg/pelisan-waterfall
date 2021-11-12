@@ -1083,6 +1083,44 @@ Extra extra large	xxl	    ≥1400px
 }
 
 @media only screen and (max-width:992px) {
+    a.logo img{
+        border: none;
+    }
+    .kanan a svg.bi{
+        display: flex;
+    }
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .container-fluid{
+        margin: 20px 30px!important;
+    }
+    
+    .container-fluid .kiri ul{
+        display: none;
+    }
+    
+    .navbar .nav .responsive{
+        position: relative;
+    }
+    
+    .navbar ul#nav{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .navbar .responsive a{
+        color: #fff;
+        float: none;
+        display: block;
+        text-decoration: none;
+        padding: 15px 50px;
+        border-top: 2px solid rgba(239, 130, 1, 0.2);
+    }
+
     /* Responsive Hero Image*/
 
     .carousel-text-content h1 {
@@ -1229,55 +1267,19 @@ Extra extra large	xxl	    ≥1400px
     }
 }
 
-@media only screen and (min-width:767px){
+@media only screen and (min-width:992px){
     .navbar .responsive{
         display: none;
     }
 }
 
 @media only screen and (max-width:767px) {
-    .navbar{
-    background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .container-fluid{
-        margin: 20px 30px!important;
-    }
-
-    .container-fluid .kiri ul{
-        display: none;
-    }
-
-    .navbar .nav .responsive{
-        position: relative;
-    }
-
-    .navbar ul#nav{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    .navbar .responsive a{
-        color: #fff;
-        float: none;
-        display: block;
-        text-decoration: none;
-        padding: 15px 50px;
-        border-top: 2px solid rgba(239, 130, 1, 0.2);
-    }
-
     a.logo img{
         border: none;
         width: 200px;
     }
     #id{
         font-size: .9em;
-    }
-
-    .kanan a svg.bi{
-        display: flex;
     }
     .carousel-text-content h1 {
         font-size: 2.8em;

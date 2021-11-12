@@ -16,7 +16,7 @@ function updateContent() {
     will_translate_navbar[2].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#location">Location</a></li>';
     will_translate_navbar[3].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#contact-us">Contact Us</a></li>';
     
-    will_translate[0].outerHTML = '<p class="will-translate">The island of Bali is not always about the beach. Many hidden paradises are waiting to be discovered. One of them is the Pelisan Waterfall, which is located in the Kintamani sub-district of Bangli. This hidden paradise, waiting to be explored </p>';
+    will_translate[0].outerHTML = '<p class="will-translate">The island of Bali is not always about the beach. Many hidden paradises are waiting to be discovered. One of them is the Pelisan Waterfall, which is located in the Kintamani sub-district of Bangli. This hidden paradise waiting to be explored </p>';
     will_translate[1].outerHTML = '<h2 class="will-translate">Entry Fee</h2>';
     will_translate[2].outerHTML = '<h2 class="will-translate"><strong>About</strong><br>Pelisan Waterfall</h2>';
     will_translate[3].outerHTML = '<p style="padding-top: 10px;" class="will-translate">Pelisan Waterfall is a waterfall located on Banjar Langgahan Kangin, Langgahan village, Kintamani sub-district of Bangli, Bali. This waterfall does not plunge directly to the ground. However, it flows on a sloping slope in the river valley. The thing that makes this waterfall more beautiful, because the springs appear at several points. Furthermore, the environment is lush, very ideal for those of you who are looking for silence and peace because of its hidden location and away from the noise of the machine.</p>';
@@ -53,7 +53,7 @@ function updateContent() {
     will_translate_navbar[2].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#location">Lokasi</a></li>';
     will_translate_navbar[3].outerHTML = '<li class="nav menu will-translate-navbar"><a href="#contact-us">Kontak Kami</a></li>';
 
-    will_translate[0].outerHTML = '<p class="will-translate">Pulau Bali tidak selalu tentang pantai. Banyak surga tersembunyi yang menunggu untuk ditemui. Salah satunya adalah air terjun Pelisan ini, yang berlokasi di kecamatan Kintamani, kabupaten Bangli. Surga tersembunyi ini, menunggu untuk dijelajahi.</p>';
+    will_translate[0].outerHTML = '<p class="will-translate">Pulau Bali tidak selalu tentang pantai. Banyak surga tersembunyi yang menunggu untuk ditemui. Salah satunya adalah air terjun Pelisan ini, yang berlokasi di kecamatan Kintamani, kabupaten Bangli. Surga tersembunyi ini menunggu untuk dijelajahi.</p>';
     will_translate[1].outerHTML = '<h2 class="will-translate">Tiket Masuk</h2>';
     will_translate[2].outerHTML = '<h2 class="will-translate"><strong>Tentang</strong><br>Air Terjun Pelisan</h2>';
     will_translate[3].outerHTML = '<p style="padding-top: 10px;" class="will-translate">Air terjun Pelisan merupakan air terjun yang berada di banjar adat Langgahan Kangin, desa Langgahan, kecamatan Kintamani, kabupaten Bangli, Bali. Air terjun ini tidak terjun langsung ke tanah. Namun, mengalir pada tebih miring yang ada di lembah sungai. Hal yang membuat air terjun ini lebih cantik, karena mata airnya muncul di sejumlah titik. Selain itu, alam sekitarnya yang masih asri, sangat idel bagi anda yang mencari kesunyian serta kedamaian karena lokasinya yang tersembunyi dan jauh dari kebisingan</p>';

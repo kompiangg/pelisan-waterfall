@@ -13,13 +13,13 @@ function updateContent() {
   if (update() == "ENG") {
     document.querySelector('html').setAttribute("lang", "en");
     will_translate_navbar[0].innerText = 'Home';
+    will_translate_navbar[1].innerText = 'About';
     will_translate_navbar[2].innerText = 'Gallery';
-    will_translate_navbar[1].innerText = 'About Us';
     will_translate_navbar[3].innerText = 'Location';
 
     will_translate_navbar[4].innerText = 'Home';
+    will_translate_navbar[5].innerText = 'About';
     will_translate_navbar[6].innerText = 'Gallery';
-    will_translate_navbar[5].innerText = 'About Us';
     will_translate_navbar[7].innerText = 'Location';
     
     will_translate[0].outerHTML = '<p class="will-translate">The island of Bali is not always about the beach. Many hidden paradises are waiting to be discovered. One of them is the Pelisan Waterfall, which is located in the Kintamani sub-district of Bangli. This hidden paradise waiting to be explored </p>';
@@ -55,13 +55,13 @@ function updateContent() {
   else if (update() == "IDN") {
     document.querySelector('html').setAttribute("lang", "id");
     will_translate_navbar[0].innerText = 'Beranda';
-    will_translate_navbar[2].innerText = 'Tentang Kami';
-    will_translate_navbar[1].innerText = 'Galeri';
+    will_translate_navbar[1].innerText = 'Tentang Kita';
+    will_translate_navbar[2].innerText = 'Galeri';
     will_translate_navbar[3].innerText = 'Lokasi';
 
     will_translate_navbar[4].innerText = 'Beranda';
-    will_translate_navbar[6].innerText = 'Tentang Kami';
-    will_translate_navbar[5].innerText = 'Galeri';
+    will_translate_navbar[5].innerText = 'Tentang Kita';
+    will_translate_navbar[6].innerText = 'Galeri';
     will_translate_navbar[7].innerText = 'Lokasi';
 
     will_translate[0].outerHTML = '<p class="will-translate">Pulau Bali tidak selalu tentang pantai. Banyak surga tersembunyi yang menunggu untuk ditemui. Salah satunya adalah air terjun Pelisan ini, yang berlokasi di kecamatan Kintamani, kabupaten Bangli. Surga tersembunyi ini menunggu untuk dijelajahi.</p>';

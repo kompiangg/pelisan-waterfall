@@ -579,7 +579,7 @@ option{
 
 /* Gallery & View 360 */
 
-section.view-360{
+#view-360{
     background-color: #eee;
     padding: 6vw 1.5vw;
     display: flex;

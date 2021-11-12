@@ -1229,6 +1229,12 @@ Extra extra large	xxl	    ≥1400px
     }
 }
 
+@media only screen and (min-width:767px){
+    .responsive{
+        display: none;
+    }
+}
+
 @media only screen and (max-width:767px) {
     .navbar{
     background-color: rgba(0, 0, 0, 0.8);

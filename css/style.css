@@ -633,7 +633,7 @@ option{
 }
 
 .content .image .pin:hover {
-    width: 2vw;
+    width: 10%;
 }
 
 .content .image .pin-img-1 {
@@ -1255,7 +1255,17 @@ Extra extra large	xxl	    ≥1400px
         left: 10%;
     }
 
+    .content .image .pin-img-1:hover {
+        top: 39%;
+        left: 10%;
+    }
+
     .content .image .pin-img-2 {
+        top: 3.5%;
+        left: 78.6%;
+    }
+
+    .content .image .pin-img-2:hover {
         top: 3.5%;
         left: 78.6%;
     }
@@ -1265,7 +1275,17 @@ Extra extra large	xxl	    ≥1400px
         left: 57%;
     }
 
+    .content .image .pin-img-3:hover {
+        top: 24%;
+        left: 57%;
+    }
+
     .content .image .pin-img-4 {
+        top: 45.8%;
+        left: 45%;
+    }
+
+    .content .image .pin-img-4:hover {
         top: 45.8%;
         left: 45%;
     }
